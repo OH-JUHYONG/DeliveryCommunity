@@ -259,6 +259,17 @@
                             </StackPanel>
                         </ContentControl>
                     </Button>
+                    <Button Style="{StaticResource ImageButtton}" Width="450">
+                        <ContentControl Width="600">
+                            <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                                <Image Source="/Resources/농업생명과학대학 4호관.jpg" Width="150"/>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock Text="saghte 4호관" Style="{StaticResource ImageBuildingnameTextBlock}"/>
+                                    <TextBlock Text="전북 전주시 덕진구 백제대로 567" Style="{StaticResource ImageAddressTextBlock}"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </ContentControl>
+                    </Button>
                 </StackPanel>
             </ScrollViewer>
         </StackPanel>
