@@ -69,7 +69,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\Article.cs" />
+    <Compile Include="Model\FoodCategoryDictonary.cs" />
     <Compile Include="ViewModel\boardVM.cs" />
+    <Compile Include="ViewModel\Commands\AddArticleCommand.cs" />
+    <Compile Include="ViewModel\Commands\FoodCategoryToggleCommand.cs" />
+    <Compile Include="ViewModel\Commands\PageNavigateCommand.cs" />
+    <Compile Include="ViewModel\Commands\SearchByTextCommand.cs" />
     <Compile Include="ViewModel\PageReplaceVM.cs" />
     <Compile Include="View\DeliveryCommunity.xaml.cs">
       <DependentUpon>DeliveryCommunity.xaml</DependentUpon>
@@ -131,10 +137,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\" />
-    <Folder Include="ViewModel\Commands\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="Resources\공과대학 6호관.jpg" />
   </ItemGroup>
