@@ -83,56 +83,6 @@ namespace DeliveryCommunity.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap 공과대학_2호관 {
-            get {
-                object obj = ResourceManager.GetObject("공과대학_2호관", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap 공과대학_3호관 {
-            get {
-                object obj = ResourceManager.GetObject("공과대학_3호관", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap 공과대학_4호관 {
-            get {
-                object obj = ResourceManager.GetObject("공과대학_4호관", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap 공과대학_5호관 {
-            get {
-                object obj = ResourceManager.GetObject("공과대학_5호관", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap 공과대학_6호관 {
-            get {
-                object obj = ResourceManager.GetObject("공과대학_6호관", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
         internal static System.Drawing.Bitmap 공과대학_7호관 {
             get {
                 object obj = ResourceManager.GetObject("공과대학_7호관", resourceCulture);
@@ -143,59 +93,9 @@ namespace DeliveryCommunity.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap 공과대학_8호관 {
-            get {
-                object obj = ResourceManager.GetObject("공과대학_8호관", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap 공과대학_9호관 {
-            get {
-                object obj = ResourceManager.GetObject("공과대학_9호관", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
         internal static System.Drawing.Bitmap 농업생명과학대학_1호관 {
             get {
                 object obj = ResourceManager.GetObject("농업생명과학대학_1호관", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap 농업생명과학대학_2호관 {
-            get {
-                object obj = ResourceManager.GetObject("농업생명과학대학_2호관", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap 농업생명과학대학_3호관 {
-            get {
-                object obj = ResourceManager.GetObject("농업생명과학대학_3호관", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap 농업생명과학대학_4호관 {
-            get {
-                object obj = ResourceManager.GetObject("농업생명과학대학_4호관", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,9 +123,9 @@ namespace DeliveryCommunity.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap 새빛관 {
+        internal static System.Drawing.Bitmap 상과대학_1호관 {
             get {
-                object obj = ResourceManager.GetObject("새빛관", resourceCulture);
+                object obj = ResourceManager.GetObject("상과대학_1호관", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,9 +133,29 @@ namespace DeliveryCommunity.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap 진리관 {
+        internal static System.Drawing.Bitmap 상과대학_2호관 {
             get {
-                object obj = ResourceManager.GetObject("진리관", resourceCulture);
+                object obj = ResourceManager.GetObject("상과대학_2호관", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 인문대학_1호관 {
+            get {
+                object obj = ResourceManager.GetObject("인문대학_1호관", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 인문대학_2호관 {
+            get {
+                object obj = ResourceManager.GetObject("인문대학_2호관", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -246,26 +166,6 @@ namespace DeliveryCommunity.Properties {
         internal static System.Drawing.Bitmap 참빛관 {
             get {
                 object obj = ResourceManager.GetObject("참빛관", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap 평화관 {
-            get {
-                object obj = ResourceManager.GetObject("평화관", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap 한빛관 {
-            get {
-                object obj = ResourceManager.GetObject("한빛관", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

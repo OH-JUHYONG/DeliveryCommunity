@@ -124,41 +124,11 @@
   <data name="공과대학_1호관" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\공과대학 1호관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="공과대학_2호관" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\공과대학 2호관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="공과대학_3호관" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\공과대학 3호관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="공과대학_4호관" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\공과대학 4호관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="공과대학_5호관" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\공과대학 5호관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="공과대학_6호관" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\공과대학 6호관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="공과대학_7호관" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\공과대학 7호관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="공과대학_8호관" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\공과대학 8호관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="공과대학_9호관" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\공과대학 9호관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="농업생명과학대학_1호관" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\농업생명과학대학 1호관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="농업생명과학대학_2호관" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\농업생명과학대학 2호관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="농업생명과학대학_3호관" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\농업생명과학대학 3호관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="농업생명과학대학_4호관" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\농업생명과학대학 4호관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="농업생명과학대학_본관" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\농업생명과학대학 본관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,19 +136,19 @@
   <data name="대동관" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\대동관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="새빛관" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\새빛관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="상과대학_1호관" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\상과대학 1호관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="진리관" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\진리관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="상과대학_2호관" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\상과대학 2호관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="인문대학_1호관" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\인문대학 1호관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="인문대학_2호관" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\인문대학 2호관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="참빛관" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\참빛관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="평화관" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\평화관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="한빛관" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\한빛관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

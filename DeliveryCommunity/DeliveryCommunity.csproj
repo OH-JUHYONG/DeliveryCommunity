@@ -71,6 +71,11 @@
     </ApplicationDefinition>
     <Compile Include="Model\Article.cs" />
     <Compile Include="Model\FoodCategoryDictonary.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\boardVM.cs" />
     <Compile Include="ViewModel\Commands\AddArticleCommand.cs" />
     <Compile Include="ViewModel\Commands\FoodCategoryToggleCommand.cs" />
@@ -135,11 +140,6 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -159,66 +159,35 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <Resource Include="Resources\공과대학 6호관.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\공과대학 7호관.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\공과대학 8호관.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\공과대학 9호관.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\농업생명과학대학 1호관.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\농업생명과학대학 2호관.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\농업생명과학대학 3호관.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\농업생명과학대학 4호관.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\농업생명과학대학 본관.jpg" />
-  </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\대동관.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\새빛관.jpg" />
+    <Resource Include="Resources\상과대학 1호관.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\진리관.jpg" />
+    <Resource Include="Resources\상과대학 2호관.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\인문대학 1호관.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\인문대학 2호관.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\참빛관.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\평화관.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\한빛관.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\공과대학 1호관.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\공과대학 2호관.jpg" />
+    <Resource Include="Resources\공과대학 7호관.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\공과대학 3호관.jpg" />
+    <Resource Include="Resources\농업생명과학대학 1호관.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\공과대학 4호관.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\공과대학 5호관.jpg" />
+    <Resource Include="Resources\농업생명과학대학 본관.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.5.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.5.0\build\MaterialDesignThemes.targets')" />
