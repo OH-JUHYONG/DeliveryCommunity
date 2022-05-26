@@ -89,7 +89,7 @@
                             <TextBlock
                                 Margin="15,0,0,0"
                                 FontSize="20"
-                                Text="글쓰" />
+                                Text="글쓰기" />
                         </StackPanel>
                     </Button>
                 </StackPanel>
