@@ -7,7 +7,7 @@
       xmlns:local="clr-namespace:DeliveryCommunity.View"
       xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="600"
+      d:DesignHeight="600" d:DesignWidth="675"
       Title="ContentPage">
 
     <Page.Resources>
@@ -27,7 +27,7 @@
             <RowDefinition Height="0.6*"/>
             <RowDefinition Height="0.6*"/>
             <RowDefinition Height="3*"/>
-            <RowDefinition Height="1.2*"/>
+            <RowDefinition Height="0.8*"/>
             <RowDefinition Height="0.6*"/>
         </Grid.RowDefinitions>
 

@@ -7,12 +7,12 @@
       xmlns:local="clr-namespace:DeliveryCommunity.View"
       xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="600"
+      d:DesignHeight="600" d:DesignWidth="675"
       Title="LoginPage">
 
     <Grid>
-        <StackPanel Orientation="Vertical" Background="#F8F8F8" >
-            <TextBlock Text="로그인 해주세요" Margin="50" Style="{StaticResource titleTextBlock}"/>
+        <StackPanel Orientation="Vertical" Background="#F8F8F8" VerticalAlignment="Center" >
+            <TextBlock Text="로그인 해주세요" Margin="50 100 50 50" Style="{StaticResource titleTextBlock}"/>
             <StackPanel Orientation="Horizontal"   Margin="20" HorizontalAlignment="Center">
                 <materialDesign:PackIcon Kind="User" Width="25" Height="25" Margin="10,0"/>
                 <TextBox Margin="10,0"  Width="250" />
