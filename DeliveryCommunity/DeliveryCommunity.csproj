@@ -68,6 +68,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModel\boardVM.cs" />
+    <Compile Include="ViewModel\PageReplaceVM.cs" />
     <Compile Include="View\DeliveryCommunity.xaml.cs">
       <DependentUpon>DeliveryCommunity.xaml</DependentUpon>
     </Compile>
@@ -130,7 +132,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
-    <Folder Include="ViewModel\" />
+    <Folder Include="ViewModel\Commands\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\공과대학 6호관.jpg" />
