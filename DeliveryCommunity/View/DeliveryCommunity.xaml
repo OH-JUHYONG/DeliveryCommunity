@@ -42,7 +42,10 @@
 
                 <StackPanel>
                     <TextBlock Style="{StaticResource LeftScreenTextBlock}" Text="유저 정보" />
-                    <Button Style="{StaticResource LeftScreenButton}">
+                    <Button
+                        Command="{Binding Source={StaticResource pagevm}, Path=PageNavigateCommand}"
+                        CommandParameter="LoginPage"
+                        Style="{StaticResource LeftScreenButton}">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon
                                 Width="25"
@@ -54,7 +57,10 @@
                                 Text="로그인" />
                         </StackPanel>
                     </Button>
-                    <Button Style="{StaticResource LeftScreenButton}">
+                    <Button
+                        Command="{Binding Source={StaticResource pagevm}, Path=PageNavigateCommand}"
+                        CommandParameter="LocationSettingPage"
+                        Style="{StaticResource LeftScreenButton}">
                         <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                             <materialDesign:PackIcon
                                 Width="25"
@@ -68,7 +74,10 @@
                     </Button>
 
                     <TextBlock Style="{StaticResource LeftScreenTextBlock}" Text="게시글" />
-                    <Button Style="{StaticResource LeftScreenButton}">
+                    <Button
+                        Command="{Binding Source={StaticResource pagevm}, Path=PageNavigateCommand}"
+                        CommandParameter="MainBoardPage"
+                        Style="{StaticResource LeftScreenButton}">
                         <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                             <materialDesign:PackIcon
                                 Width="25"
@@ -80,7 +89,10 @@
                                 Text="모집글" />
                         </StackPanel>
                     </Button>
-                    <Button Style="{StaticResource LeftScreenButton}">
+                    <Button
+                        Command="{Binding Source={StaticResource pagevm}, Path=PageNavigateCommand}"
+                        CommandParameter="WritePage"
+                        Style="{StaticResource LeftScreenButton}">
                         <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                             <materialDesign:PackIcon
                                 Width="25"
@@ -96,9 +108,10 @@
             </Border>
 
             <Frame
+                x:Name="PageFrame"
                 Grid.Column="1"
                 NavigationUIVisibility="Hidden"
-                Source="/View/LocationSettingPage.xaml" />
+                Source="/View/MainBoardPage.xaml" />
 
 
         </Grid>
