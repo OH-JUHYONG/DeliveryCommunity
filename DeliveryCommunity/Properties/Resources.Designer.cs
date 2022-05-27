@@ -63,6 +63,16 @@ namespace DeliveryCommunity.Properties {
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static byte[] a시월구일1 {
+            get {
+                object obj = ResourceManager.GetObject("a시월구일1", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static byte[] a시월구일굴림1 {
             get {
                 object obj = ResourceManager.GetObject("a시월구일굴림1", resourceCulture);
