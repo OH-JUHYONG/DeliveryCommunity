@@ -13,18 +13,7 @@ namespace DeliveryCommunity.ViewModel
 {
     class boardVM
     {
-        private static ObservableCollection<Article> articleCollection;
-        public static ObservableCollection<Article> ArticleCollection 
-        {
-            get {
-                if (articleCollection == null)
-                {
-                    articleCollection = new ObservableCollection<Article>();
-                }
-                return articleCollection;
-            }
-            set { articleCollection = value; }
-        }
+        public static ObservableCollection<Article> ArticleCollection = new ObservableCollection<Article>();
 
         public static int NextArticleNumber { get; set; }
         //command
