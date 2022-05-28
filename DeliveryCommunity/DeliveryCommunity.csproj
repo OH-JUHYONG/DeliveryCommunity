@@ -82,6 +82,7 @@
     <Compile Include="ViewModel\Commands\PageNavigateCommand.cs" />
     <Compile Include="ViewModel\Commands\SearchByTextCommand.cs" />
     <Compile Include="ViewModel\PageReplaceVM.cs" />
+    <Compile Include="ViewModel\WriteVM.cs" />
     <Compile Include="View\ContentPage.xaml.cs">
       <DependentUpon>ContentPage.xaml</DependentUpon>
     </Compile>

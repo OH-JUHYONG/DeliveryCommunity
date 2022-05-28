@@ -25,6 +25,9 @@ namespace DeliveryCommunity.ViewModel.Commands
         public void Execute(object parameter)
         {
             //BoardVM.ArticleCollectionViewSource.Filter += BoardVM.ShowOnlyQueryFilter;
+            //BoardVM = boardVM.Instance();
+            //BoardVM.ArticleCollection = boardVM.Instance().ArticleCollection;
+            //BoardVM.ArticleCollectionViewSource.Source = BoardVM.ArticleCollection;
             BoardVM.ArticleCollectionViewSource.View.Refresh();
         }
     }

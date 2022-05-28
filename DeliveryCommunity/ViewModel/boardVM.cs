@@ -13,14 +13,25 @@ namespace DeliveryCommunity.ViewModel
 {
     class boardVM
     {
-        public ObservableCollection<Article> ArticleCollection { get; set; }
-        public int PrimaryArticleNumber = 1;
+        private static ObservableCollection<Article> articleCollection;
+        public static ObservableCollection<Article> ArticleCollection 
+        {
+            get {
+                if (articleCollection == null)
+                {
+                    articleCollection = new ObservableCollection<Article>();
+                }
+                return articleCollection;
+            }
+            set { articleCollection = value; }
+        }
+
+        public static int NextArticleNumber { get; set; }
         //command
         public SearchByTextCommand SearchCommand { get; set; }
         public string TextQuery { get; set; }
         public FoodCategoryToggleCommand FoodCategoryToggleCommand { get; set; }
         public int FoodCategoryMask { get; set; }
-        public AddArticleCommand AddArticleCommand { get; set; }
 
         //CollectionViewSource: 중간 layer에서 view를 관리해줌 filter를 적용해도 원본은 바뀌지 않음
         public CollectionViewSource ArticleCollectionViewSource { get; set; }
@@ -32,12 +43,10 @@ namespace DeliveryCommunity.ViewModel
 
         public boardVM()
         {
-            AddArticleCommand = new AddArticleCommand(this);
             SearchCommand = new SearchByTextCommand(this);
             FoodCategoryToggleCommand = new FoodCategoryToggleCommand(this);
             FoodCategoryMask = 0;
             TextQuery = "";
-            ArticleCollection = new ObservableCollection<Article>();
             ArticleCollectionViewSource = new CollectionViewSource();
             ArticleCollectionViewSource.Source = ArticleCollection;
             ArticleCollectionViewSource.Filter += ShowOnlyFilteredItem;
@@ -47,10 +56,12 @@ namespace DeliveryCommunity.ViewModel
 
         public void AddTempData()
         {
-            
+            if(ArticleCollection.Count > 1) return;//page가 바뀔때마다 실행되므로 한번실행하면 막아둠
+
+            NextArticleNumber = 1;
             ArticleCollection.Add(new Article() {
-                ArticleNo = PrimaryArticleNumber++,
-                Title = "3333",
+                ArticleNo = NextArticleNumber++,
+                Title = "111",
                 Content = "aaaa bbbb cccc ddddd",
                 Place = "한빛관",
                 Category = "한식",
@@ -60,9 +71,9 @@ namespace DeliveryCommunity.ViewModel
             });
             ArticleCollection.Add(new Article()
             {
-                ArticleNo = PrimaryArticleNumber++,
-                Title = "3333",
-                Content = "aaaa bbbb cccc ddddd",
+                ArticleNo = NextArticleNumber++,
+                Title = "222",
+                Content = "aaaa bbbb cccc ddddd ㄱㄱㄱㄱ",
                 Place = "한빛관",
                 Category = "한식",
                 ChatLink = "open.kakao.어쩌구",
@@ -71,9 +82,9 @@ namespace DeliveryCommunity.ViewModel
             });
             ArticleCollection.Add(new Article()
             {
-                ArticleNo = PrimaryArticleNumber++,
+                ArticleNo = NextArticleNumber++,
                 Title = "3333",
-                Content = "aaaa bbbb cccc ddddd",
+                Content = "aaaa bbbb cccc ddddd ㄱㄱㄱㄱ ㄴㄴㄴㄴ",
                 Place = "한빛관",
                 Category = "중식",
                 ChatLink = "open.kakao.어쩌구",
