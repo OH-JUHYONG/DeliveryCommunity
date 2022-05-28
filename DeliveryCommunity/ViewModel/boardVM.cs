@@ -14,7 +14,7 @@ namespace DeliveryCommunity.ViewModel
     class boardVM
     {
         public ObservableCollection<Article> ArticleCollection { get; set; }
-
+        public int PrimaryArticleNumber = 1;
         //command
         public SearchByTextCommand SearchCommand { get; set; }
         public string TextQuery { get; set; }
@@ -47,11 +47,39 @@ namespace DeliveryCommunity.ViewModel
 
         public void AddTempData()
         {
-            ArticleCollection.Add(new Article());
-            ArticleCollection.Add(new Article() { Title = "222" });
-            ArticleCollection.Add(new Article() { Title = "3333", Content = "ffff", Place = "한빛관", Category = "한식", FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["한식"] });
-            ArticleCollection.Add(new Article() { Title = "배달시키자", Content = "본문123", Place = "한빛관", Category = "양식", FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["양식"] });
-            ArticleCollection.Add(new Article() { Title = "44444", Content = "그럴듯한본문", Place = "새빛관", Category = "양식", FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["양식"] });
+            
+            ArticleCollection.Add(new Article() {
+                ArticleNo = PrimaryArticleNumber++,
+                Title = "3333",
+                Content = "aaaa bbbb cccc ddddd",
+                Place = "한빛관",
+                Category = "한식",
+                ChatLink = "open.kakao.어쩌구",
+                PeopleCount = 1,
+                FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["한식"]
+            });
+            ArticleCollection.Add(new Article()
+            {
+                ArticleNo = PrimaryArticleNumber++,
+                Title = "3333",
+                Content = "aaaa bbbb cccc ddddd",
+                Place = "한빛관",
+                Category = "한식",
+                ChatLink = "open.kakao.어쩌구",
+                PeopleCount = 1,
+                FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["한식"]
+            });
+            ArticleCollection.Add(new Article()
+            {
+                ArticleNo = PrimaryArticleNumber++,
+                Title = "3333",
+                Content = "aaaa bbbb cccc ddddd",
+                Place = "한빛관",
+                Category = "중식",
+                ChatLink = "open.kakao.어쩌구",
+                PeopleCount = 1,
+                FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["중식"]
+            });
         }
 
         public void ShowOnlyFilteredItem(object sender, FilterEventArgs e)
