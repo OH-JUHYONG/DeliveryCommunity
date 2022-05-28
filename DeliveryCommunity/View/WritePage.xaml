@@ -76,7 +76,7 @@
             <TextBox
                 FontSize="25"
                 Style="{StaticResource searchTextBox}"
-                Text="{Binding  Path=Content}" />
+                Text="{Binding Path=Content}" />
         </StackPanel>
 
         <Label
@@ -90,28 +90,44 @@
                     Margin="0,5,0,5"
                     HorizontalAlignment="Center"
                     Orientation="Horizontal">
-                    <ToggleButton Content="# 한식" Style="{StaticResource foodcategoryButton}">
+                    <ToggleButton
+                        Command="{Binding Path=WritePageFoodBitToggleCommand}"
+                        CommandParameter="{Binding RelativeSource={RelativeSource Self}}"
+                        Content="# 한식"
+                        Style="{StaticResource foodcategoryButton}">
                         <ToggleButton.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="17" />
                             </Style>
                         </ToggleButton.Resources>
                     </ToggleButton>
-                    <ToggleButton Content="# 일식" Style="{StaticResource foodcategoryButton}">
+                    <ToggleButton
+                        Command="{Binding Path=WritePageFoodBitToggleCommand}"
+                        CommandParameter="{Binding RelativeSource={RelativeSource Self}}"
+                        Content="# 일식"
+                        Style="{StaticResource foodcategoryButton}">
                         <ToggleButton.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="17" />
                             </Style>
                         </ToggleButton.Resources>
                     </ToggleButton>
-                    <ToggleButton Content="# 중식" Style="{StaticResource foodcategoryButton}">
+                    <ToggleButton
+                        Command="{Binding Path=WritePageFoodBitToggleCommand}"
+                        CommandParameter="{Binding RelativeSource={RelativeSource Self}}"
+                        Content="# 중식"
+                        Style="{StaticResource foodcategoryButton}">
                         <ToggleButton.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="17" />
                             </Style>
                         </ToggleButton.Resources>
                     </ToggleButton>
-                    <ToggleButton Content="# 분식" Style="{StaticResource foodcategoryButton}">
+                    <ToggleButton
+                        Command="{Binding Path=WritePageFoodBitToggleCommand}"
+                        CommandParameter="{Binding RelativeSource={RelativeSource Self}}"
+                        Content="# 분식"
+                        Style="{StaticResource foodcategoryButton}">
                         <ToggleButton.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="17" />
@@ -130,21 +146,33 @@
                         </ToggleButton.Resources>
                     </ToggleButton>
 
-                    <ToggleButton Content="# 치킨" Style="{StaticResource foodcategoryButton}">
+                    <ToggleButton
+                        Command="{Binding Path=WritePageFoodBitToggleCommand}"
+                        CommandParameter="{Binding RelativeSource={RelativeSource Self}}"
+                        Content="# 치킨"
+                        Style="{StaticResource foodcategoryButton}">
                         <ToggleButton.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="17" />
                             </Style>
                         </ToggleButton.Resources>
                     </ToggleButton>
-                    <ToggleButton Content="# 피자" Style="{StaticResource foodcategoryButton}">
+                    <ToggleButton
+                        Command="{Binding Path=WritePageFoodBitToggleCommand}"
+                        CommandParameter="{Binding RelativeSource={RelativeSource Self}}"
+                        Content="# 피자"
+                        Style="{StaticResource foodcategoryButton}">
                         <ToggleButton.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="17" />
                             </Style>
                         </ToggleButton.Resources>
                     </ToggleButton>
-                    <ToggleButton Content="# 햄버거" Style="{StaticResource foodcategoryButton}">
+                    <ToggleButton
+                        Command="{Binding Path=WritePageFoodBitToggleCommand}"
+                        CommandParameter="{Binding RelativeSource={RelativeSource Self}}"
+                        Content="# 햄버거"
+                        Style="{StaticResource foodcategoryButton}">
                         <ToggleButton.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="17" />
@@ -168,7 +196,7 @@
             <TextBox
                 FontSize="25"
                 Style="{StaticResource searchTextBox}"
-                Text="{Binding  Path=ChatLink}" />
+                Text="{Binding Path=ChatLink}" />
         </StackPanel>
     </Grid>
 </Page>
