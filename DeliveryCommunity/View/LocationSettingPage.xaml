@@ -164,6 +164,11 @@
                             </StackPanel>
                         </ContentControl>
                     </Button>
+                    
+                    <!--사범대-->
+                    <!--예대-->
+                    <!--자연대-->
+                    <!--의대-->
                 </StackPanel>
             </ScrollViewer>
         </StackPanel>

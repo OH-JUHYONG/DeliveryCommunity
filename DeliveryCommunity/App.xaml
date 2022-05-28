@@ -17,6 +17,7 @@
 
             <vm:PageReplaceVM x:Key="pagevm" />
 
+            <!--TextBlock-->
             <Style x:Key="LeftScreenTextBlock" TargetType="TextBlock">
                 <Setter Property="Foreground" Value="#BDC4D7"/>
                 <Setter Property="FontSize" Value="16"/>
@@ -25,30 +26,11 @@
                 <Setter Property="FontFamily" Value="Fonts\#a시월구일1"/>
             </Style>
 
-            <Style x:Key="LeftScreenButton" TargetType="Button">
-                <Setter Property="Background" Value="#FFFFFF"/>
-                <Setter Property="BorderThickness" Value="0"/>
-                <Setter Property="Margin" Value="15 10 15 5"/>
-                <Setter Property="HorizontalAlignment" Value="Left"/>
-                <Setter Property="VerticalAlignment" Value="Center"/>
-            </Style>
-
             <Style x:Key="LeftScreenButtonTextBlock" TargetType="TextBlock">
                 <Setter Property="FontSize" Value="20"/>
                 <Setter Property="Margin" Value="15 0 0 0"/>
                 <Setter Property="FontFamily" Value="Fonts\#a시월구일1"/>
             </Style>
-
-            <Style x:Key="ImageButtton" TargetType="Button">
-                <Setter Property="Background" Value="#F8F8F8"/>
-                <Setter Property="BorderThickness" Value="0"/>
-                <Setter Property="FontSize" Value="15"/>
-                <Setter Property="FontWeight" Value="Bold"/>
-                <Setter Property="HorizontalAlignment" Value="Left"/>
-                <Setter Property="VerticalAlignment" Value="Center"/>
-                <Setter Property="Margin" Value="10, 0, 0, 0"/>
-            </Style>
-
 
             <Style x:Key="ImageBuildingnameTextBlock" TargetType="TextBlock">
                 <Setter Property="FontWeight" Value="Bold"/>
@@ -66,6 +48,41 @@
                 <Setter Property="Margin" Value="15, 10, 0, 0"/>
             </Style>
 
+            <Style x:Key="titleTextBlock" TargetType="TextBlock">
+                <Setter Property="FontSize" Value="30"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="FontFamily" Value="Fonts\#a시월구일1"/>
+                <Setter Property="TextAlignment" Value="Center"/>
+            </Style>
+
+            <Style x:Key="loginTextBlock" TargetType="TextBlock">
+                <Setter Property="FontFamily" Value="Fonts\#a시월구일1"/>
+                <Setter Property="Margin" Value="0 0 10 0"/>
+            </Style>
+
+            <Style x:Key="mainBoradTextBlock" TargetType="TextBlock">
+                <Setter Property="FontSize" Value="17"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="Margin" Value="10 10 0 0"/>
+                <Setter Property="FontFamily" Value="Fonts\#a시월구일1"/>
+            </Style>
+
+            <Style x:Key="mainBoradPageTitleTextBlock" TargetType="TextBlock">
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="Foreground" Value="#BDC4D7"/>
+                <Setter Property="Margin" Value="5 20 0 0"/>
+                <Setter Property="FontFamily" Value="Fonts\#a시월구일1"/>
+            </Style>
+
+            <Style x:Key="mainBoradPageContentTextBlock" TargetType="TextBlock">
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="Foreground" Value="#BDC4D7"/>
+                <Setter Property="Margin" Value="5 5 0 5"/>
+                <Setter Property="Height" Value="15"/>
+                <Setter Property="FontFamily" Value="Fonts\#a시월구일1"/>
+            </Style>
+
+            <!--TextBox-->
             <Style x:Key="searchTextBox" TargetType="TextBox">
                 <Setter Property="Background" Value="#FFFFFF"/>
                 <Setter Property="Foreground" Value="#a0a0a0"/>
@@ -95,6 +112,26 @@
                 </Setter>
             </Style>
 
+
+            <!--Button-->
+            <Style x:Key="LeftScreenButton" TargetType="Button">
+                <Setter Property="Background" Value="#FFFFFF"/>
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="Margin" Value="15 10 15 5"/>
+                <Setter Property="HorizontalAlignment" Value="Left"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+            </Style>
+
+            <Style x:Key="ImageButtton" TargetType="Button">
+                <Setter Property="Background" Value="#F8F8F8"/>
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="HorizontalAlignment" Value="Left"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="Margin" Value="10, 0, 0, 0"/>
+            </Style>
+     
             <Style x:Key="buildingcategoryButton" TargetType="ToggleButton">
                 <Setter Property="Background" Value="#F8F8F8"/>
                 <Setter Property="BorderThickness" Value="0"/>
@@ -126,25 +163,6 @@
                 <Setter Property="FontWeight" Value="Bold"/>
             </Style>
 
-            <Style x:Key="writePageLabel" TargetType="Label">
-                <Setter Property="FontSize" Value="20"/>
-                <Setter Property="FontWeight" Value="Bold"/>
-                <Setter Property="FontFamily" Value="Fonts\#a시월구일1"/>
-                <Setter Property="HorizontalAlignment" Value="Center"/>
-            </Style>
-
-            <Style x:Key="titleTextBlock" TargetType="TextBlock">
-                <Setter Property="FontSize" Value="30"/>
-                <Setter Property="FontWeight" Value="Bold"/>
-                <Setter Property="FontFamily" Value="Fonts\#a시월구일1"/>
-                <Setter Property="TextAlignment" Value="Center"/>
-            </Style>
-
-            <Style x:Key="loginTextBlock" TargetType="TextBlock">
-                <Setter Property="FontFamily" Value="Fonts\#a시월구일1"/>
-                <Setter Property="Margin" Value="0 0 10 0"/>
-            </Style>
-
             <Style x:Key="loginButton" TargetType="Button">
                 <Setter Property="Width" Value="100"/>
                 <Setter Property="Height" Value="40"/>
@@ -154,6 +172,23 @@
                 <Setter Property="Foreground" Value="#FFFFFF"/>
                 <Setter Property="ToolTip" Value="Login"/>
             </Style>
+            
+            <!--Label-->
+            <Style x:Key="writePageLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="FontFamily" Value="Fonts\#a시월구일1"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+            </Style>
+
+            <Style x:Key="mainBoradPageUpLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="Foreground" Value="#BDC4D7"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="FontFamily" Value="Fonts\#a시월구일1"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+            </Style>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

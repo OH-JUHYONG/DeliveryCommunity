@@ -14,25 +14,19 @@
     <Page.Resources>
         <vm:boardVM x:Key="boardViewModel"/>
     </Page.Resources>
-    <Grid DataContext="{StaticResource boardViewModel}">
 
+    <Grid DataContext="{StaticResource boardViewModel}" Background="#F8F8F8">
         <Grid.RowDefinitions>
             <RowDefinition />
             <RowDefinition />
-            <RowDefinition Height="35" />
+            <RowDefinition Height="0.3*" />
             <RowDefinition Height="4*" />
         </Grid.RowDefinitions>
 
-        <WrapPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBox
-                x:Name="SearchTextBox"
-                Width="200"
-                Style="{StaticResource searchTextBox}"
-                Text="{Binding Path=TextQuery}" />
-            <Button
-                Content="검색"
-                Margin="10"
-                HorizontalAlignment="Right"
+        <StackPanel Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBox x:Name="SearchTextBox" Width="200" Style="{StaticResource searchTextBox}"
+                     Text="{Binding Path=TextQuery}" />
+            <Button Content="검색" Margin="10" HorizontalAlignment="Right"
                 Command="{Binding Path=SearchCommand}"
                 Style="{StaticResource completeButton}">
                 <Button.Resources>
@@ -41,151 +35,138 @@
                     </Style>
                 </Button.Resources>
             </Button>
-        </WrapPanel>
-        
+        </StackPanel>
+
         <StackPanel Grid.Row="1" HorizontalAlignment="Center">
             <StackPanel Orientation="Horizontal" Margin="0 5 0 5" HorizontalAlignment="Center">
-            <ToggleButton
-                Command="{Binding Path=FoodCategoryToggleCommand}"
-                CommandParameter="{Binding RelativeSource={RelativeSource Self}}"
-                Content="한식"
-                Style="{StaticResource foodcategoryButton}">
-                <ToggleButton.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="17" />
-                    </Style>
-                </ToggleButton.Resources>
-            </ToggleButton>
+                <ToggleButton Content="한식" 
+                              Command="{Binding Path=FoodCategoryToggleCommand}"
+                              CommandParameter="{Binding RelativeSource={RelativeSource Self}}"               
+                              Style="{StaticResource foodcategoryButton}">
+                    <ToggleButton.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="17" />
+                        </Style>
+                    </ToggleButton.Resources>
+                </ToggleButton>
 
-            <ToggleButton
-                Command="{Binding Path=FoodCategoryToggleCommand}"
-                CommandParameter="{Binding RelativeSource={RelativeSource Self}}"
-                Content="일식"
-                Style="{StaticResource foodcategoryButton}">
-                <ToggleButton.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="17" />
-                    </Style>
-                </ToggleButton.Resources>
-            </ToggleButton>
+                <ToggleButton Content="일식"
+                              Command="{Binding Path=FoodCategoryToggleCommand}"
+                              CommandParameter="{Binding RelativeSource={RelativeSource Self}}"                
+                              Style="{StaticResource foodcategoryButton}">
+                    <ToggleButton.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="17" />
+                        </Style>
+                    </ToggleButton.Resources>
+                </ToggleButton>
 
-            <ToggleButton
-                Command="{Binding Path=FoodCategoryToggleCommand}"
-                CommandParameter="{Binding RelativeSource={RelativeSource Self}}"
-                Content="중식"
-                Style="{StaticResource foodcategoryButton}">
-                <ToggleButton.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="17" />
-                    </Style>
-                </ToggleButton.Resources>
-            </ToggleButton>
+                <ToggleButton Content="중식"
+                              Command="{Binding Path=FoodCategoryToggleCommand}"
+                              CommandParameter="{Binding RelativeSource={RelativeSource Self}}"               
+                              Style="{StaticResource foodcategoryButton}">
+                    <ToggleButton.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="17" />
+                        </Style>
+                    </ToggleButton.Resources>
+                </ToggleButton>
 
-            <ToggleButton
-                Command="{Binding Path=FoodCategoryToggleCommand}"
-                CommandParameter="{Binding RelativeSource={RelativeSource Self}}"
-                Content="분식"
-                Style="{StaticResource foodcategoryButton}">
-                <ToggleButton.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="17" />
-                    </Style>
-                </ToggleButton.Resources>
-            </ToggleButton>
+                <ToggleButton Content="분식"
+                              Command="{Binding Path=FoodCategoryToggleCommand}"
+                              CommandParameter="{Binding RelativeSource={RelativeSource Self}}"               
+                              Style="{StaticResource foodcategoryButton}">
+                    <ToggleButton.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="17" />
+                        </Style>
+                    </ToggleButton.Resources>
+                </ToggleButton>
+
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="0 5 0 5" HorizontalAlignment="Center">
-            <ToggleButton
-                Command="{Binding Path=FoodCategoryToggleCommand}"
-                CommandParameter="{Binding RelativeSource={RelativeSource Self}}"
-                Content="양식"
-                Style="{StaticResource foodcategoryButton}">
-                <ToggleButton.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="17" />
-                    </Style>
-                </ToggleButton.Resources>
-            </ToggleButton>
+                <ToggleButton Content="양식"
+                              Command="{Binding Path=FoodCategoryToggleCommand}"
+                              CommandParameter="{Binding RelativeSource={RelativeSource Self}}"
+                              Style="{StaticResource foodcategoryButton}">
+                    <ToggleButton.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="17" />
+                        </Style>
+                    </ToggleButton.Resources>
+                </ToggleButton>
 
-            <ToggleButton
-                Command="{Binding Path=FoodCategoryToggleCommand}"
-                CommandParameter="{Binding RelativeSource={RelativeSource Self}}"
-                Content="치킨"
-                Style="{StaticResource foodcategoryButton}">
-                <ToggleButton.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="17" />
-                    </Style>
-                </ToggleButton.Resources>
-            </ToggleButton>
+                <ToggleButton Content="치킨"
+                              Command="{Binding Path=FoodCategoryToggleCommand}"
+                              CommandParameter="{Binding RelativeSource={RelativeSource Self}}"               
+                              Style="{StaticResource foodcategoryButton}">
+                    <ToggleButton.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="17" />
+                        </Style>
+                    </ToggleButton.Resources>
+                </ToggleButton>
 
-            <ToggleButton
-                Command="{Binding Path=FoodCategoryToggleCommand}"
-                CommandParameter="{Binding RelativeSource={RelativeSource Self}}"
-                Content="피자"
-                Style="{StaticResource foodcategoryButton}">
-                <ToggleButton.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="17" />
-                    </Style>
-                </ToggleButton.Resources>
-            </ToggleButton>
+                <ToggleButton Content="피자"
+                              Command="{Binding Path=FoodCategoryToggleCommand}"
+                              CommandParameter="{Binding RelativeSource={RelativeSource Self}}"              
+                              Style="{StaticResource foodcategoryButton}">
+                    <ToggleButton.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="17" />
+                        </Style>
+                    </ToggleButton.Resources>
+                </ToggleButton>
 
-            <ToggleButton
-                Command="{Binding Path=FoodCategoryToggleCommand}"
-                CommandParameter="{Binding RelativeSource={RelativeSource Self}}"
-                Content="햄버거"
-                Style="{StaticResource foodcategoryButton}">
-                <ToggleButton.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="17" />
-                    </Style>
-                </ToggleButton.Resources>
-            </ToggleButton>
+                <ToggleButton Content="햄버거"
+                              Command="{Binding Path=FoodCategoryToggleCommand}"
+                              CommandParameter="{Binding RelativeSource={RelativeSource Self}}"               
+                              Style="{StaticResource foodcategoryButton}">
+                    <ToggleButton.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="17" />
+                        </Style>
+                    </ToggleButton.Resources>
+                </ToggleButton>
             </StackPanel>
         </StackPanel>
-        <Label Grid.Row="2" Content="NOW MATCHING!" />
-        <ScrollViewer Grid.Row="3" Grid.ColumnSpan="2">
+
+        <TextBlock Grid.Row="2" Text="NOW MATCHING!" Style="{StaticResource mainBoradTextBlock}"/>
+
+        <ScrollViewer Grid.Row="3" Margin="10, 10,10.2,0" VerticalScrollBarVisibility="Auto">
             <ListView
                 x:Name="boardLV"
                 HorizontalContentAlignment="Stretch"
                 ItemsSource="{Binding ArticleCollectionView}">
-                <ListView.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <StackPanel />
-                    </ItemsPanelTemplate>
-                </ListView.ItemsPanel>
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel Margin="10" Background="LightGray">
+                        <Border Background="#FFFFFF" CornerRadius="20">
+                        <StackPanel Margin="10">
                             <WrapPanel>
                                 <Label
                                     x:Name="FoodCategoryLabel"
                                     Content="{Binding Path=Category}"
-                                    FontSize="15" />
+                                    Style="{StaticResource mainBoradPageUpLabel}"/>
                                 <Label
                                     x:Name="PlaceLabel"
                                     Content="{Binding Path=Place}"
-                                    FontSize="15" />
-                                <Label
+                                    Style="{StaticResource mainBoradPageUpLabel}"/>
+                                    <Label
                                     x:Name="PeopleCountLabel"
                                     Content="{Binding Path=PeopleCount}"
-                                    FontSize="15" />
-
-                            </WrapPanel>
+                                    Style="{StaticResource mainBoradPageUpLabel}"/>
+                                </WrapPanel>
                             <TextBlock
-                                x:Name="TitleTextBlock"
-                                Margin="5"
-                                FontSize="20"
-                                FontWeight="Bold"
-                                Text="{Binding Path=Title}" />
+                                x:Name="TitleTextBlock"                            
+                                Text="{Binding Path=Title}" 
+                                Style="{StaticResource mainBoradPageTitleTextBlock}"/>
 
                             <TextBlock
                                 x:Name="ContentTextBlock"
-                                Height="50"
-                                Margin="5"
-                                FontSize="15"
+                                Style="{StaticResource mainBoradPageTitleTextBlock}"
                                 Text="{Binding Path=Content}" />
                         </StackPanel>
+                        </Border>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
