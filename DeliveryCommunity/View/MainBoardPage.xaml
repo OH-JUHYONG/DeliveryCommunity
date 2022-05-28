@@ -138,14 +138,10 @@
                 x:Name="boardLV"
                 HorizontalContentAlignment="Stretch"
                 ItemsSource="{Binding ArticleCollectionView}">
-                <ListView.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <StackPanel/>
-                    </ItemsPanelTemplate>
-                </ListView.ItemsPanel>
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel Margin="10" Background="#FFFFFF">
+                        <Border Background="#FFFFFF" CornerRadius="20">
+                        <StackPanel Margin="10">
                             <WrapPanel>
                                 <Label
                                     x:Name="FoodCategoryLabel"
@@ -155,12 +151,11 @@
                                     x:Name="PlaceLabel"
                                     Content="{Binding Path=Place}"
                                     Style="{StaticResource mainBoradPageUpLabel}"/>
-                                <Label
+                                    <Label
                                     x:Name="PeopleCountLabel"
                                     Content="{Binding Path=PeopleCount}"
                                     Style="{StaticResource mainBoradPageUpLabel}"/>
-
-                            </WrapPanel>
+                                </WrapPanel>
                             <TextBlock
                                 x:Name="TitleTextBlock"                            
                                 Text="{Binding Path=Title}" 
@@ -171,6 +166,7 @@
                                 Style="{StaticResource mainBoradPageTitleTextBlock}"
                                 Text="{Binding Path=Content}" />
                         </StackPanel>
+                        </Border>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
