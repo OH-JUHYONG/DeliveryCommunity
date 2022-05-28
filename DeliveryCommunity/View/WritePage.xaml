@@ -138,7 +138,11 @@
                 </StackPanel>
 
                 <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-                    <ToggleButton Content="# 양식" Style="{StaticResource foodcategoryButton}">
+                    <ToggleButton
+                        Command="{Binding Path=WritePageFoodBitToggleCommand}"
+                        CommandParameter="{Binding RelativeSource={RelativeSource Self}}"
+                        Content="# 양식"
+                        Style="{StaticResource foodcategoryButton}">
                         <ToggleButton.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="17" />
