@@ -38,8 +38,8 @@
                 <ToggleButton Content="상대" Style="{StaticResource buildingcategoryButton}"/>
                 <ToggleButton Content="사범대" Style="{StaticResource buildingcategoryButton}"/>
                 <ToggleButton Content="예대" Style="{StaticResource buildingcategoryButton}"/>
-                <ToggleButton Content="의대" Style="{StaticResource buildingcategoryButton}"/>
                 <ToggleButton Content="자연대" Style="{StaticResource buildingcategoryButton}"/>
+                <ToggleButton Content="의대" Style="{StaticResource buildingcategoryButton}"/>
             </StackPanel>
 
             <ScrollViewer Margin="88,30,87.2,0" Width="500" Height="421" VerticalScrollBarVisibility="Auto">
@@ -47,7 +47,7 @@
 
                     <!--생활관-->
                     <Button Style="{StaticResource ImageButtton}" Width="450">
-                        <ContentControl Width="600">
+                        <ContentControl Width="450">
                             <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
                                 <Image Source="/Resources/참빛관.jpg" Width="150"/>
                                 <StackPanel Orientation="Vertical">
@@ -117,30 +117,6 @@
                         </ContentControl>
                     </Button>
 
-                    <!--상과대학-->
-                    <Button Style="{StaticResource ImageButtton}" Width="450">
-                        <ContentControl Width="600">
-                            <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
-                                <Image Source="/Resources/상과대학 1호관.jpg" Width="150"/>
-                                <StackPanel Orientation="Vertical">
-                                    <TextBlock Text="상과대학 1호관" Style="{StaticResource ImageBuildingnameTextBlock}"/>
-                                    <TextBlock Text="전북 전주시 덕진구 백제대로 567" Style="{StaticResource ImageAddressTextBlock}"/>
-                                </StackPanel>
-                            </StackPanel>
-                        </ContentControl>
-                    </Button>
-                    <Button Style="{StaticResource ImageButtton}" Width="450">
-                        <ContentControl Width="600">
-                            <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
-                                <Image Source="/Resources/상과대학 2호관.jpg" Width="150"/>
-                                <StackPanel Orientation="Vertical">
-                                    <TextBlock Text="상과대학 2호관" Style="{StaticResource ImageBuildingnameTextBlock}"/>
-                                    <TextBlock Text="전북 전주시 덕진구 백제대로 567" Style="{StaticResource ImageAddressTextBlock}"/>
-                                </StackPanel>
-                            </StackPanel>
-                        </ContentControl>
-                    </Button>
-
                     <!--인문대학-->
                     <Button Style="{StaticResource ImageButtton}" Width="450">
                         <ContentControl Width="600">
@@ -159,6 +135,30 @@
                                 <Image Source="/Resources/인문대학 2호관.jpg" Width="150"/>
                                 <StackPanel Orientation="Vertical">
                                     <TextBlock Text="인문대학 2호관" Style="{StaticResource ImageBuildingnameTextBlock}"/>
+                                    <TextBlock Text="전북 전주시 덕진구 백제대로 567" Style="{StaticResource ImageAddressTextBlock}"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </ContentControl>
+                    </Button>
+
+                    <!--상과대학-->
+                    <Button Style="{StaticResource ImageButtton}" Width="450">
+                        <ContentControl Width="600">
+                            <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                                <Image Source="/Resources/상과대학 1호관.jpg" Width="150"/>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock Text="상과대학 1호관" Style="{StaticResource ImageBuildingnameTextBlock}"/>
+                                    <TextBlock Text="전북 전주시 덕진구 백제대로 567" Style="{StaticResource ImageAddressTextBlock}"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </ContentControl>
+                    </Button>
+                    <Button Style="{StaticResource ImageButtton}" Width="450">
+                        <ContentControl Width="600">
+                            <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                                <Image Source="/Resources/상과대학 2호관.jpg" Width="150"/>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock Text="상과대학 2호관" Style="{StaticResource ImageBuildingnameTextBlock}"/>
                                     <TextBlock Text="전북 전주시 덕진구 백제대로 567" Style="{StaticResource ImageAddressTextBlock}"/>
                                 </StackPanel>
                             </StackPanel>

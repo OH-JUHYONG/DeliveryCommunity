@@ -32,13 +32,12 @@
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="0" Grid.Column="2" HorizontalAlignment="Right">
-            <Button Margin="0 0 10 0" Style="{StaticResource completeButton}">
+            <Button Content="수정" Margin="0 0 10 0" Style="{StaticResource completeButton}">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="10"/>
                     </Style>
                 </Button.Resources>
-                <TextBlock Text="수정" Style="{StaticResource completeButtonTextBlock}"/>
             </Button>
         </Grid>
 
@@ -79,6 +78,27 @@
                             </Style>
                         </ToggleButton.Resources>
                     </ToggleButton>
+                    <ToggleButton Content="# 분식"
+                Style="{StaticResource foodcategoryButton}">
+                        <ToggleButton.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="17"/>
+                            </Style>
+                        </ToggleButton.Resources>
+                    </ToggleButton>
+
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
+                    <ToggleButton Content="# 양식"
+                Style="{StaticResource foodcategoryButton}">
+                        <ToggleButton.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="17"/>
+                            </Style>
+                        </ToggleButton.Resources>
+                    </ToggleButton>
+
                     <ToggleButton Content="# 치킨"
                    Style="{StaticResource foodcategoryButton}">
                         <ToggleButton.Resources>
@@ -87,9 +107,6 @@
                             </Style>
                         </ToggleButton.Resources>
                     </ToggleButton>
-                </StackPanel>
-
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
                     <ToggleButton Content="# 피자"
                 Style="{StaticResource foodcategoryButton}">
                         <ToggleButton.Resources>
@@ -99,22 +116,6 @@
                         </ToggleButton.Resources>
                     </ToggleButton>
                     <ToggleButton Content="# 햄버거"
-                Style="{StaticResource foodcategoryButton}">
-                        <ToggleButton.Resources>
-                            <Style TargetType="Border">
-                                <Setter Property="CornerRadius" Value="17"/>
-                            </Style>
-                        </ToggleButton.Resources>
-                    </ToggleButton>
-                    <ToggleButton Content="# 양식"
-                Style="{StaticResource foodcategoryButton}">
-                        <ToggleButton.Resources>
-                            <Style TargetType="Border">
-                                <Setter Property="CornerRadius" Value="17"/>
-                            </Style>
-                        </ToggleButton.Resources>
-                    </ToggleButton>
-                    <ToggleButton Content="# 분식"
                 Style="{StaticResource foodcategoryButton}">
                         <ToggleButton.Resources>
                             <Style TargetType="Border">

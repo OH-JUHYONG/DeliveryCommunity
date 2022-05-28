@@ -45,7 +45,7 @@
                             <materialDesign:PackIcon
                                 Width="25"
                                 Height="25"
-                                Kind="Login" />
+                                Kind="Login" Foreground="#00539C"/>
                             <TextBlock Text="로그인" Style="{StaticResource LeftScreenButtonTextBlock}"/>
                         </StackPanel>
                     </Button>
@@ -56,13 +56,13 @@
                             <materialDesign:PackIcon
                                 Width="25"
                                 Height="25"
-                                Kind="Location" />
+                                Kind="Location" Foreground="#FFD662" />
                             <TextBlock
                                 Text="위치 설정" Style="{StaticResource LeftScreenButtonTextBlock}"/>
                         </StackPanel>
                     </Button>
 
-                    <TextBlock Text="게시글" Style="{StaticResource LeftScreenTextBlock}" />
+                    <TextBlock Text="게시글" Style="{StaticResource LeftScreenTextBlock}"/>
                     <Button
                         Command="{Binding Source={StaticResource pagevm}, Path=PageNavigateCommand}"
                         CommandParameter="MainBoardPage" Style="{StaticResource LeftScreenButton}">
@@ -70,7 +70,7 @@
                             <materialDesign:PackIcon
                                 Width="25"
                                 Height="25"
-                                Kind="Paper" />
+                                Kind="Paper" Foreground="#2BAE66"/>
                             <TextBlock
                                 Text="모집글" Style="{StaticResource LeftScreenButtonTextBlock}"/>
                         </StackPanel>
@@ -83,7 +83,7 @@
                             <materialDesign:PackIcon
                                 Width="25"
                                 Height="25"
-                                Kind="NoteAdd" />
+                                Kind="NoteAdd" Foreground="#F95700" />
                             <TextBlock
                                 Text="글쓰기" Style="{StaticResource LeftScreenButtonTextBlock}"/>
                         </StackPanel>
@@ -92,7 +92,10 @@
                         Command="{Binding Source={StaticResource pagevm}, Path=PageNavigateCommand}"
                         CommandParameter="UpdatePage" Style="{StaticResource LeftScreenButton}">
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <materialDesign:PackIcon Kind="Pencil" Width="25" Height="25"/>
+                            <materialDesign:PackIcon                                
+                                Width="25" 
+                                Height="25"
+                                Kind="Pencil" Foreground="#A04EF6"/>
                             <TextBlock Text="내가 쓴 글" Style="{StaticResource LeftScreenButtonTextBlock}"/>
                         </StackPanel>
                     </Button>
