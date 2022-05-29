@@ -33,6 +33,12 @@ namespace DeliveryCommunity.ViewModel
         public FoodCategoryToggleCommand FoodCategoryToggleCommand { get; set; }
         public int FoodCategoryMask { get; set; }
 
+        // 주형 수정
+        public BuildingCategoryToggleCommand BuildingCategoryToggleCommand { get; set; }
+        public int BuildingCategoryMask { get; set; }
+
+
+
         //CollectionViewSource: 중간 layer에서 view를 관리해줌 filter를 적용해도 원본은 바뀌지 않음
         public CollectionViewSource ArticleCollectionViewSource { get; set; }
         public ICollectionView ArticleCollectionView
@@ -46,6 +52,11 @@ namespace DeliveryCommunity.ViewModel
             SearchCommand = new SearchByTextCommand(this);
             FoodCategoryToggleCommand = new FoodCategoryToggleCommand(this);
             FoodCategoryMask = 0;
+
+            // 주형 수정
+            BuildingCategoryToggleCommand = new BuildingCategoryToggleCommand(this);
+            BuildingCategoryMask = 0;
+
             TextQuery = "";
             ArticleCollectionViewSource = new CollectionViewSource();
             ArticleCollectionViewSource.Source = ArticleCollection;
@@ -98,6 +109,7 @@ namespace DeliveryCommunity.ViewModel
             Article article = e.Item as Article;
             e.Accepted = IsInQuery(article) && IsSelectedFoodCategory(article);
         }
+
         public bool IsInQuery(Article article)
         {
             // 필터가 비어있다면 전부 보여줌
