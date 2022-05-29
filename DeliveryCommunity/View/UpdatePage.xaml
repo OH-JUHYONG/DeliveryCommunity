@@ -31,14 +31,20 @@
             <RowDefinition Height="0.6*"/>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="0" Grid.Column="2" HorizontalAlignment="Right">
-            <Button Content="수정" Margin="0 0 10 0" Style="{StaticResource completeButton}">
+        <Grid Grid.Row="0" Grid.Column="2">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <TextBlock Text="모집인원" Style="{StaticResource writePageTextBlock}"/>
+                <TextBox Width="20" Height="30" FontSize="15" Margin="0 5 5 0" TextAlignment="Center"/>
+                <TextBlock Text="명" Style="{StaticResource writePageTextBlock}"/>
+                <Button Content="수정" Margin="10 0 10 0" Style="{StaticResource completeButton}">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="10"/>
                     </Style>
                 </Button.Resources>
             </Button>
+            </StackPanel>
+            
         </Grid>
 
         <Label Content="제목" Grid.Row="1" Grid.Column="1" Style="{StaticResource writePageLabel}"/>
