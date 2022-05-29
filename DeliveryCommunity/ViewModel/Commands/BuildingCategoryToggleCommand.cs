@@ -22,7 +22,7 @@ namespace DeliveryCommunity.ViewModel.Commands
 
         public bool CanExecute(object parameter)
         {
-            return true;
+            return true; 
         }
 
         public void Execute(object parameter)
@@ -31,15 +31,15 @@ namespace DeliveryCommunity.ViewModel.Commands
             bool ischecked = (bool)toggleButton.IsChecked;
             string buildingString = (string)toggleButton.Content;
             int buildingbit = BuildingCategoryDictionary.StringToBuildingBit[buildingString];
-            if(ischecked)
-            {
-                BoardVM.BuildingCategoryMask |= buildingbit; //마스크에 추가
-            }
-            else
-            {
-                BoardVM.BuildingCategoryMask &= ~buildingbit; // 마스크에 제거
-            }
-            BoardVM.ArticleCollectionView.Refresh();
+            //if(ischecked)
+            //{
+            //    BoardVM.BuildingCategoryMask |= buildingbit; //마스크에 추가
+            //}
+            //else
+            //{
+            //    BoardVM.BuildingCategoryMask &= ~buildingbit; // 마스크에 제거
+            //}
+            //BoardVM.ArticleCollectionView.Refresh();
         }
     }
 }
