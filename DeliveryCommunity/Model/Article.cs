@@ -24,16 +24,19 @@ namespace DeliveryCommunity.Model
         public string Category { get; set; }
         public string ChatLink { get; set; }
         public int FoodCategoryBit { get; set; }
+        //public int BuildingCategoryBit { get; set; }
         public Article()
         {
             ArticleNo = 0;
             Title = "임시";
             Content = "aaaaaaaaaaaaaaaaaabbbbcbcbcbcbddd";
-            Place = "7호관";
+            Place = "공대 7호관";
             PeopleCount = 1;
             Category = "치킨";
             ChatLink = "openkakao";
             FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit[Category];
+            //BuildingCategoryBit = BuildingCategoryDictionary.StringToBuildingBit[Place];
+            
         }
         public override string ToString()
         {

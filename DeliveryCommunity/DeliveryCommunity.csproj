@@ -70,6 +70,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Model\Article.cs" />
+    <Compile Include="Model\BuildingCategoryDictionary.cs" />
     <Compile Include="Model\FoodCategoryDictonary.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -78,6 +79,7 @@
     </Compile>
     <Compile Include="ViewModel\boardVM.cs" />
     <Compile Include="ViewModel\Commands\AddArticleCommand.cs" />
+    <Compile Include="ViewModel\Commands\BuildingCategoryToggleCommand.cs" />
     <Compile Include="ViewModel\Commands\FoodCategoryToggleCommand.cs" />
     <Compile Include="ViewModel\Commands\PageNavigateCommand.cs" />
     <Compile Include="ViewModel\Commands\SearchByTextCommand.cs" />

@@ -133,7 +133,7 @@
 
         <TextBlock Grid.Row="2" Text="NOW MATCHING!" Style="{StaticResource mainBoradTextBlock}"/>
 
-        <ScrollViewer Grid.Row="3" Margin="10, 10,10.2,0" VerticalScrollBarVisibility="Auto">
+        <ScrollViewer Height="350" Grid.Row="3" Margin="10, 10,10.2,0" VerticalScrollBarVisibility="Auto" CanContentScroll="True">
             <ListView
                 x:Name="boardLV"
                 HorizontalContentAlignment="Stretch"

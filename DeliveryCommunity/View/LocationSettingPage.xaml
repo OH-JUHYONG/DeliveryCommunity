@@ -5,15 +5,18 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:local="clr-namespace:DeliveryCommunity.View"
-       xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+      xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+      xmlns:vm="clr-namespace:DeliveryCommunity.ViewModel"
       mc:Ignorable="d" 
       d:DesignHeight="600" d:DesignWidth="675"
       Title="LocationSettingPage">
 
     <Page.Resources>
-        <ResourceDictionary>
+        <!--<ResourceDictionary>
             <Style x:Key="styleless"/>
-        </ResourceDictionary>
+            
+        </ResourceDictionary>-->
+        <vm:boardVM x:Key="boardViewModel"/>
     </Page.Resources>
 
     <Grid>
@@ -21,17 +24,31 @@
             <TextBlock Text="위치 설정" Margin="40 20 40 0" Style="{StaticResource titleTextBlock}"/>
 
             <!--검색창-->
-            <Grid Width="300" HorizontalAlignment="Center" Margin="20 20 15 0" >
-                <TextBlock Margin="20 0 15 0" VerticalAlignment="Center" Foreground="#868686" Panel.ZIndex="1"
+            <StackPanel Orientation="Horizontal" Width="300" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20 10 15 0" >
+                <TextBox x:Name="SearchTextBox" Width="200" Style="{StaticResource searchTextBox}"
+                     Text="{Binding Path=TextQuery}" />
+                <Button Content="검색" Margin="10" HorizontalAlignment="Right"
+                Command="{Binding Path=SearchCommand}"
+                Style="{StaticResource completeButton}">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <!--<TextBlock Margin="20 0 15 0" VerticalAlignment="Center" Foreground="#868686" Panel.ZIndex="1"
                            Text="검색" IsHitTestVisible="False" Visibility="Visible"/>
                 <TextBox x:Name="textBoxSearch" Style="{StaticResource searchTextBox}"/>
                 <materialDesign:PackIcon Kind="Magnify" Width="15" Height="15" Margin="0 0 15 0" 
-                                         HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            </Grid>
+                                         HorizontalAlignment="Left" VerticalAlignment="Center"/>-->
+            </StackPanel>
 
             <!--건물별 카테고리-->
             <StackPanel Orientation="Horizontal" Height="40" Margin="10 10 10 0">
-                <ToggleButton Content="생활관" Style="{StaticResource buildingcategoryButton}"/>
+                <ToggleButton Content="생활관" 
+                              Command="{Binding Path=BuildingCategoryToggleCommand}" 
+                              CommandParameter="{Binding RelativeSource={RelativeSource Self}}" 
+                              Style="{StaticResource buildingcategoryButton}"/>
                 <ToggleButton Content="공대" Style="{StaticResource buildingcategoryButton}"/>
                 <ToggleButton Content="농대" Style="{StaticResource buildingcategoryButton}"/>
                 <ToggleButton Content="인문대" Style="{StaticResource buildingcategoryButton}"/>
@@ -42,7 +59,7 @@
                 <ToggleButton Content="의대" Style="{StaticResource buildingcategoryButton}"/>
             </StackPanel>
 
-            <ScrollViewer Margin="88,30,87.2,0" Width="500" Height="421" VerticalScrollBarVisibility="Auto">
+            <ScrollViewer Margin="88,30,87.2,0" Width="500" Height="399" VerticalScrollBarVisibility="Auto">
                 <StackPanel>
 
                     <!--생활관-->
@@ -51,7 +68,8 @@
                             <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
                                 <Image Source="/Resources/참빛관.jpg" Width="150"/>
                                 <StackPanel Orientation="Vertical">
-                                    <TextBlock Text="참빛관" Style="{StaticResource ImageBuildingnameTextBlock}"/>
+                                    <TextBlock Text="참빛관"                                                
+                                               Style="{StaticResource ImageBuildingnameTextBlock}"/>
                                     <TextBlock Text="전북 전주시 덕진구 창포길 93" Style="{StaticResource ImageAddressTextBlock}"/>
                                 </StackPanel>
                             </StackPanel>
