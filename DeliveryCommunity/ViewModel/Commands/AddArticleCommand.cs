@@ -10,11 +10,10 @@ namespace DeliveryCommunity.ViewModel.Commands
 {
     class AddArticleCommand : ICommand
     {
-        boardVM BoardVM { get; set; }
-
-        public AddArticleCommand(boardVM vm)
+        WriteVM WriteVM { get; set; }
+        public AddArticleCommand(WriteVM vm)
         {
-            BoardVM = vm;
+            WriteVM = vm;
         }
         public event EventHandler CanExecuteChanged;
 
@@ -25,7 +24,15 @@ namespace DeliveryCommunity.ViewModel.Commands
 
         public void Execute(object parameter)
         {
-            BoardVM.ArticleCollection.Insert(0, new Article());
+            Article article = new Article();
+            article.Content = WriteVM.Content;
+            article.Title = WriteVM.Title;
+            article.ChatLink= WriteVM.ChatLink;
+            article.ArticleNo = boardVM.NextArticleNumber++;
+            boardVM.ArticleCollection.Insert(0, article);
+            //확인을 눌렀을때는 화면이 넘어가야함
+            PageReplaceVM pageReplace = new PageReplaceVM();
+            pageReplace.NavigateTo("MainBoardPage");
         }
     }
 }

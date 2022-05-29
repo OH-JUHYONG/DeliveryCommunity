@@ -16,8 +16,7 @@ namespace DeliveryCommunity.Model
         //카테고리,
         //링크
         //만든날짜?
-        //public int ArticleNo { get; set; }
-
+        public int ArticleNo { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
         public string Place { get; set; }
@@ -28,6 +27,7 @@ namespace DeliveryCommunity.Model
         //public int BuildingCategoryBit { get; set; }
         public Article()
         {
+            ArticleNo = 0;
             Title = "임시";
             Content = "aaaaaaaaaaaaaaaaaabbbbcbcbcbcbddd";
             Place = "공대 7호관";
