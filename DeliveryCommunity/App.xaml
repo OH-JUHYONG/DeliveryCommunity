@@ -69,7 +69,7 @@
 
             <Style x:Key="mainBoradPageTitleTextBlock" TargetType="TextBlock">
                 <Setter Property="FontSize" Value="15"/>
-                <Setter Property="Foreground" Value="#BDC4D7"/>
+                <Setter Property="Foreground" Value="#6D7599"/>
                 <Setter Property="Margin" Value="5 20 0 0"/>
                 <Setter Property="FontFamily" Value="Fonts\#a시월구일1"/>
             </Style>
@@ -183,7 +183,7 @@
 
             <Style x:Key="mainBoradPageUpLabel" TargetType="Label">
                 <Setter Property="FontSize" Value="20"/>
-                <Setter Property="Foreground" Value="#BDC4D7"/>
+                <Setter Property="Foreground" Value="#6D7599"/>
                 <Setter Property="FontWeight" Value="Bold"/>
                 <Setter Property="FontFamily" Value="Fonts\#a시월구일1"/>
                 <Setter Property="HorizontalAlignment" Value="Center"/>

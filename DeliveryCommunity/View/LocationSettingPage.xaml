@@ -21,13 +21,24 @@
             <TextBlock Text="위치 설정" Margin="40 20 40 0" Style="{StaticResource titleTextBlock}"/>
 
             <!--검색창-->
-            <Grid Width="300" HorizontalAlignment="Center" Margin="20 20 15 0" >
-                <TextBlock Margin="20 0 15 0" VerticalAlignment="Center" Foreground="#868686" Panel.ZIndex="1"
+            <StackPanel Orientation="Horizontal" Width="300" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20 10 15 0" >
+                <TextBox x:Name="SearchTextBox" Width="200" Style="{StaticResource searchTextBox}"
+                     Text="{Binding Path=TextQuery}" />
+                <Button Content="검색" Margin="10" HorizontalAlignment="Right"
+                Command="{Binding Path=SearchCommand}"
+                Style="{StaticResource completeButton}">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <!--<TextBlock Margin="20 0 15 0" VerticalAlignment="Center" Foreground="#868686" Panel.ZIndex="1"
                            Text="검색" IsHitTestVisible="False" Visibility="Visible"/>
-                <TextBox x:Name="textBoxSearch" Style="{StaticResource searchTextBox}"/>
-                <materialDesign:PackIcon Kind="Magnify" Width="15" Height="15" Margin="0 0 15 0" 
-                                         HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            </Grid>
+                <TextBox x:Name="textBoxSearch" Style="{StaticResource searchTextBox}"/>-->
+                <!--<materialDesign:PackIcon Kind="Magnify" Width="15" Height="15" Margin="0 0 15 0" 
+                                         HorizontalAlignment="Left" VerticalAlignment="Center"/>-->
+            </StackPanel>
 
             <!--건물별 카테고리-->
             <StackPanel Orientation="Horizontal" Height="40" Margin="10 10 10 0">
