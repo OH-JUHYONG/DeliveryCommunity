@@ -72,9 +72,9 @@ namespace DeliveryCommunity.ViewModel
             NextArticleNumber = 1;
             ArticleCollection.Add(new Article() {
                 ArticleNo = NextArticleNumber++,
-                Title = "111",
-                Content = "aaaa bbbb cccc ddddd",
-                Place = "한빛관",
+                Title = "찜닭 드실 분?",
+                Content = "찜닭 같이 먹을 분 구해요",
+                Place = "참빛관",
                 Category = "한식",
                 ChatLink = "open.kakao.어쩌구",
                 PeopleCount = 1,
@@ -83,9 +83,9 @@ namespace DeliveryCommunity.ViewModel
             ArticleCollection.Add(new Article()
             {
                 ArticleNo = NextArticleNumber++,
-                Title = "222",
-                Content = "aaaa bbbb cccc ddddd ㄱㄱㄱㄱ",
-                Place = "한빛관",
+                Title = "갈비탕 먹을 사람?",
+                Content = "갈비탕 시킬려고 하는데 주문 같이 하실 분??",
+                Place = "대동관",
                 Category = "한식",
                 ChatLink = "open.kakao.어쩌구",
                 PeopleCount = 1,
@@ -94,13 +94,68 @@ namespace DeliveryCommunity.ViewModel
             ArticleCollection.Add(new Article()
             {
                 ArticleNo = NextArticleNumber++,
-                Title = "3333",
-                Content = "aaaa bbbb cccc ddddd ㄱㄱㄱㄱ ㄴㄴㄴㄴ",
-                Place = "한빛관",
+                Title = "비오는데 짬뽕",
+                Content = "비오는데 짬뽕 같이 시킬 분? 오카로 이야기해요",
+                Place = "공과대학 7호관",
                 Category = "중식",
                 ChatLink = "open.kakao.어쩌구",
                 PeopleCount = 1,
                 FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["중식"]
+            });
+            ArticleCollection.Add(new Article()
+            {
+                ArticleNo = NextArticleNumber++,
+                Title = "피자 먹을 분?",
+                Content = "피자 먹고 싶은데 혼자서 한판 시키기 부담스러워요 같이 드실 분 들어오세요",
+                Place = "상과대학 1호관",
+                Category = "피자",
+                ChatLink = "open.kakao.어쩌구",
+                PeopleCount = 1,
+                FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["피자"]
+            });
+            ArticleCollection.Add(new Article()
+            {
+                ArticleNo = NextArticleNumber++,
+                Title = "아웃백 딜리버리",
+                Content = "제목 그대로 아웃백 딜리버리 드실 분 오카 들어오세요",
+                Place = "참빛관",
+                Category = "양식",
+                ChatLink = "open.kakao.어쩌구",
+                PeopleCount = 1,
+                FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["양식"]
+            });
+            ArticleCollection.Add(new Article()
+            {
+                ArticleNo = NextArticleNumber++,
+                Title = "버거킹 먹고 싶어요",
+                Content = "버거킹 지금 할인하는데 같이 주문할 분?",
+                Place = "농업생명과학대학 본관",
+                Category = "햄버거",
+                ChatLink = "open.kakao.어쩌구",
+                PeopleCount = 1,
+                FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["햄버거"]
+            });
+            ArticleCollection.Add(new Article()
+            {
+                ArticleNo = NextArticleNumber++,
+                Title = "치킨 한자리 남는데",
+                Content = "BBQ 치킨 한자리 남는데 들어올 분? 선착순",
+                Place = "대동관",
+                Category = "치킨",
+                ChatLink = "open.kakao.어쩌구",
+                PeopleCount = 1,
+                FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["치킨"]
+            });
+            ArticleCollection.Add(new Article()
+            {
+                ArticleNo = NextArticleNumber++,
+                Title = "엽떡 로제 떡볶이 먹고 싶어요ㅠㅠ",
+                Content = "엽떡 로제 같이 먹을 분? 혼자 시키기에는 양이 많아서요",
+                Place = "공과대학 7호관",
+                Category = "분식",
+                ChatLink = "open.kakao.어쩌구",
+                PeopleCount = 1,
+                FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["분식"]
             });
         }
 
