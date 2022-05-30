@@ -139,6 +139,9 @@
   <data name="대동관" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\대동관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="사범대학" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\사범대학.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="상과대학_1호관" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\상과대학 1호관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -150,6 +153,15 @@
   </data>
   <data name="인문대학_2호관" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\인문대학 2호관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="자연과학대학_3호관" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\자연과학대학 3호관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="자연과학대학본관" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\자연과학대학본관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="전북대학교병원" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\전북대학교병원.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="참빛관" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\참빛관.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

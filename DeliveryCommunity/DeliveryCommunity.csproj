@@ -193,6 +193,18 @@
   <ItemGroup>
     <Resource Include="Resources\농업생명과학대학 본관.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\자연과학대학 3호관.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\사범대학.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\전북대학교병원.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\자연과학대학본관.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.5.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.5.0\build\MaterialDesignThemes.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
