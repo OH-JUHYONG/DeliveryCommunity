@@ -197,7 +197,17 @@
                     </Button>
                     
                     <!--예대-->
-                    
+                    <Button Style="{StaticResource ImageButtton}" Width="450">
+                        <ContentControl Width="600">
+                            <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                                <Image Source="/Resources/예술대학 본관.jpg" Width="150"/>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock Text="예술대학 본관" Style="{StaticResource ImageBuildingnameTextBlock}"/>
+                                    <TextBlock Text="전북 전주시 덕진구 창포길 93" Style="{StaticResource ImageAddressTextBlock}"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </ContentControl>
+                    </Button>
                     
                     <!--자연대-->
                     <Button Style="{StaticResource ImageButtton}" Width="450">
