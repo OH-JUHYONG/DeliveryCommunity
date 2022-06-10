@@ -184,9 +184,67 @@
                     </Button>
                     
                     <!--사범대-->
+                    <Button Style="{StaticResource ImageButtton}" Width="450">
+                        <ContentControl Width="600">
+                            <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                                <Image Source="/Resources/사범대학.jpg" Width="150"/>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock Text="사범대학" Style="{StaticResource ImageBuildingnameTextBlock}"/>
+                                    <TextBlock Text="전북 전주시 덕진구 백제대로 567" Style="{StaticResource ImageAddressTextBlock}"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </ContentControl>
+                    </Button>
+                    
                     <!--예대-->
+                    <Button Style="{StaticResource ImageButtton}" Width="450">
+                        <ContentControl Width="600">
+                            <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                                <Image Source="/Resources/예술대학 본관.jpg" Width="150"/>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock Text="예술대학 본관" Style="{StaticResource ImageBuildingnameTextBlock}"/>
+                                    <TextBlock Text="전북 전주시 덕진구 창포길 93" Style="{StaticResource ImageAddressTextBlock}"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </ContentControl>
+                    </Button>
+                    
                     <!--자연대-->
+                    <Button Style="{StaticResource ImageButtton}" Width="450">
+                        <ContentControl Width="600">
+                            <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                                <Image Source="/Resources/자연과학대학본관.jpg" Width="150"/>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock Text="자연과학대학본관" Style="{StaticResource ImageBuildingnameTextBlock}"/>
+                                    <TextBlock Text="전북 전주시 덕진구 백제대로 567" Style="{StaticResource ImageAddressTextBlock}"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </ContentControl>
+                    </Button>
+                    <Button Style="{StaticResource ImageButtton}" Width="450">
+                        <ContentControl Width="600">
+                            <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                                <Image Source="/Resources/자연과학대학 3호관.jpg" Width="150"/>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock Text="자연과학대학 3호관" Style="{StaticResource ImageBuildingnameTextBlock}"/>
+                                    <TextBlock Text="전북 전주시 덕진구 백제대로 567" Style="{StaticResource ImageAddressTextBlock}"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </ContentControl>
+                    </Button>
+                    
                     <!--의대-->
+                    <Button Style="{StaticResource ImageButtton}" Width="450">
+                        <ContentControl Width="600">
+                            <StackPanel Orientation="Horizontal" Width="Auto" HorizontalAlignment="Left">
+                                <Image Source="/Resources/전북대학교병원.png" Width="150"/>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock Text="전북대학교병원" Style="{StaticResource ImageBuildingnameTextBlock}"/>
+                                    <TextBlock Text="전북 전주시 덕진구 건지로 20" Style="{StaticResource ImageAddressTextBlock}"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </ContentControl>
+                    </Button>
                 </StackPanel>
             </ScrollViewer>
         </StackPanel>

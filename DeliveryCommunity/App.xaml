@@ -82,16 +82,26 @@
                 <Setter Property="FontFamily" Value="Fonts\#a시월구일1"/>
             </Style>
 
+            <Style x:Key="writePageTextBlock" TargetType="TextBlock">
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="FontWeight" Value="DemiBold"/>
+                <Setter Property="Margin" Value="0 0 10 0"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="FontFamily" Value="Fonts\#a시월구일1"/>
+            </Style>
+
+
             <!--TextBox-->
             <Style x:Key="searchTextBox" TargetType="TextBox">
                 <Setter Property="Background" Value="#FFFFFF"/>
                 <Setter Property="Foreground" Value="#a0a0a0"/>
                 <Setter Property="BorderThickness" Value="0"/>
-                <Setter Property="FontSize" Value="12"/>
+                <Setter Property="FontSize" Value="25"/>
                 <Setter Property="Padding" Value="15 13 40 13"/>
                 <Setter Property="VerticalAlignment" Value="Center"/>
                 <Setter Property="AcceptsReturn" Value="True"/>
                 <Setter Property="AcceptsTab" Value="True"/>
+                <Setter Property="FontFamily" Value="Fonts\#a시월구일1"/>
                 <Setter Property="TextWrapping" Value="WrapWithOverflow"/>
                 <Setter Property="Template">
                     <Setter.Value>
@@ -111,7 +121,6 @@
                     </Setter.Value>
                 </Setter>
             </Style>
-
 
             <!--Button-->
             <Style x:Key="LeftScreenButton" TargetType="Button">
