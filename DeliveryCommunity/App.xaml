@@ -90,6 +90,15 @@
                 <Setter Property="FontFamily" Value="Fonts\#a시월구일1"/>
             </Style>
 
+            <Style x:Key="mainBoradPageSlice" TargetType="TextBlock">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="Foreground" Value="#6D7599"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="FontFamily" Value="Fonts\#a시월구일1"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+            </Style>
+
 
             <!--TextBox-->
             <Style x:Key="searchTextBox" TargetType="TextBox">
