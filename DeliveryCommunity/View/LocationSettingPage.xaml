@@ -13,13 +13,7 @@
     d:DesignWidth="675"
     mc:Ignorable="d">
 
-    <Page.Resources>
-        <!--<ResourceDictionary>
-            <Style x:Key="styleless"/>
 
-        </ResourceDictionary>-->
-        <vm:boardVM x:Key="boardViewModel" />
-    </Page.Resources>
 
     <Grid>
         <StackPanel
@@ -31,36 +25,7 @@
                 Style="{StaticResource titleTextBlock}"
                 Text="위치 설정" />
 
-            <!--  검색창  -->
-            <StackPanel
-                Width="300"
-                Margin="20,10,15,0"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Center"
-                Orientation="Horizontal">
-                <TextBox
-                    x:Name="SearchTextBox"
-                    Width="200"
-                    Style="{StaticResource searchTextBox}"
-                    Text="{Binding Path=TextQuery}" />
-                <Button
-                    Margin="10"
-                    HorizontalAlignment="Right"
-                    Command="{Binding Path=SearchCommand}"
-                    Content="검색"
-                    Style="{StaticResource completeButton}">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="10" />
-                        </Style>
-                    </Button.Resources>
-                </Button>
-                <!--<TextBlock Margin="20 0 15 0" VerticalAlignment="Center" Foreground="#868686" Panel.ZIndex="1"
-                           Text="검색" IsHitTestVisible="False" Visibility="Visible"/>
-                <TextBox x:Name="textBoxSearch" Style="{StaticResource searchTextBox}"/>
-                <materialDesign:PackIcon Kind="Magnify" Width="15" Height="15" Margin="0 0 15 0"
-                                         HorizontalAlignment="Left" VerticalAlignment="Center"/>-->
-            </StackPanel>
+            
 
             <!--  건물별 카테고리  -->
             <StackPanel
@@ -100,7 +65,7 @@
                 <ToggleButton Content="자연대" Style="{StaticResource buildingcategoryButton}" 
                               x:Name="nature"
                     IsChecked="{Binding ElementName=SelectAllButton, Path=IsChecked, Mode=OneWay}"/>
-                <ToggleButton Content="의대" Style="{StaticResource buildingcategoryButton}" />
+                <!--<ToggleButton Content="의대" Style="{StaticResource buildingcategoryButton}" />-->
             </StackPanel>
 
             <ScrollViewer
@@ -335,7 +300,7 @@
                         </ContentControl>
                     </Button>
 
-                    <!--  의대  -->
+                    <!--  의대  --><!--
                     <Button Width="450" Style="{StaticResource ImageButtton}">
                         <ContentControl Width="600">
                             <StackPanel
@@ -349,7 +314,7 @@
                                 </StackPanel>
                             </StackPanel>
                         </ContentControl>
-                    </Button>
+                    </Button>-->
                 </StackPanel>
             </ScrollViewer>
         </StackPanel>
