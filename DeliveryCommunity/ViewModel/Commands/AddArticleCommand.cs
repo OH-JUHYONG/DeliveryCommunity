@@ -25,8 +25,11 @@ namespace DeliveryCommunity.ViewModel.Commands
         public void Execute(object parameter)
         {
             Article article = new Article();
+            article.PeopleMaxCount = WriteVM.PeopleMaxCount;
             article.Content = WriteVM.Content;
             article.Title = WriteVM.Title;
+            article.ExpireHour = WriteVM.ExpireHour;
+            article.ExpireMin = WriteVM.ExpireMin;
             article.ChatLink= WriteVM.ChatLink;
             article.ArticleNo = boardVM.NextArticleNumber++;
             article.FoodCategoryBit = WriteVM.FoodCategoryMask;
