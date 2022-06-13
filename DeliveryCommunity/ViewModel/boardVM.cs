@@ -7,32 +7,26 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Data;
+using System.Windows.Input;
 
 namespace DeliveryCommunity.ViewModel
 {
     class boardVM
     {
-        private static ObservableCollection<Article> articleCollection;
-        public static ObservableCollection<Article> ArticleCollection 
-        {
-            get {
-                if (articleCollection == null)
-                {
-                    articleCollection = new ObservableCollection<Article>();
-                }
-                return articleCollection;
-            }
-            set { articleCollection = value; }
-        }
+        public static ObservableCollection<Article> ArticleCollection = new ObservableCollection<Article>();
 
         public static int NextArticleNumber { get; set; }
         //command
+        public BoardMouseDownCommand boardMouseDownCommand { get; set; }
         public SearchByTextCommand SearchCommand { get; set; }
         public string TextQuery { get; set; }
         public FoodCategoryToggleCommand FoodCategoryToggleCommand { get; set; }
         public int FoodCategoryMask { get; set; }
-
+        
+        public Article selectedArticle { get; set; }
         //CollectionViewSource: 중간 layer에서 view를 관리해줌 filter를 적용해도 원본은 바뀌지 않음
         public CollectionViewSource ArticleCollectionViewSource { get; set; }
         public ICollectionView ArticleCollectionView
@@ -43,6 +37,7 @@ namespace DeliveryCommunity.ViewModel
 
         public boardVM()
         {
+            boardMouseDownCommand = new BoardMouseDownCommand(this);
             SearchCommand = new SearchByTextCommand(this);
             FoodCategoryToggleCommand = new FoodCategoryToggleCommand(this);
             FoodCategoryMask = 0;
@@ -51,6 +46,8 @@ namespace DeliveryCommunity.ViewModel
             ArticleCollectionViewSource.Source = ArticleCollection;
             ArticleCollectionViewSource.Filter += ShowOnlyFilteredItem;
             AddTempData();
+            
+
         }
 
 
@@ -184,5 +181,6 @@ namespace DeliveryCommunity.ViewModel
             return false;
         }
 
+        
     }
 }
