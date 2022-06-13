@@ -12,6 +12,7 @@ namespace DeliveryCommunity.ViewModel
 {
     public class ContentPageVM
     {
+        public ContentPageJoinButtonCommand ContentPageJoinButtonCommand { get; set; }
         public static Article ContentArticle { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
@@ -23,6 +24,7 @@ namespace DeliveryCommunity.ViewModel
         public int ExpireMin { get; set; }
         public ContentPageVM()
         {
+            ContentPageJoinButtonCommand = new ContentPageJoinButtonCommand(this);
             Title = ContentArticle.Title;
             Content = ContentArticle.Content;
             ChatLink = ContentArticle.ChatLink;

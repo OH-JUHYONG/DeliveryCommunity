@@ -45,7 +45,7 @@
             HorizontalAlignment="Right">
             <Button
                 Margin="10,0,10,0"
-                Command="{Binding AddArticleCommand}"
+                Command="{Binding ContentPageJoinButtonCommand}"
                 Content="참여"
                 Style="{StaticResource completeButton}">
                 <Button.Resources>
