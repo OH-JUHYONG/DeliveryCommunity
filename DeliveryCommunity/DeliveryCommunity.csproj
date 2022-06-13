@@ -78,6 +78,7 @@
     <Compile Include="Model\Article.cs" />
     <Compile Include="Model\BuildingCategoryDictionary.cs" />
     <Compile Include="Model\FoodCategoryDictonary.cs" />
+    <Compile Include="Model\User.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
