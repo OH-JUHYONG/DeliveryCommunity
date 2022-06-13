@@ -23,8 +23,9 @@ namespace DeliveryCommunity.ViewModel.Commands
 
         public void Execute(object parameter)
         {
-
-            return;
+            ContentPageVM.ContentArticle = this.BoardVM.selectedArticle;
+            PageReplaceVM pageReplace = new PageReplaceVM();
+            pageReplace.NavigateTo("ContentPage");
         }
     }
 }

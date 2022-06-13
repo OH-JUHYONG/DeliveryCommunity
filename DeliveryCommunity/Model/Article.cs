@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DeliveryCommunity.Model
 {
-    class Article
+    public class Article
     {
         //글번호
         //제목,
