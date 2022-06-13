@@ -172,18 +172,19 @@
                 x:Name="boardLV"
                 SelectionMode="Single"
                 HorizontalContentAlignment="Stretch"
+                SelectedItem="{Binding selectedArticle}"
                 ItemsSource="{Binding ArticleCollectionView}">
-
-                
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="PreviewMouseLeftButtonUp" >
+                        <!--<ei:CallMethodAction TargetObject="{Binding Source={StaticResource boardViewModel}}" MethodName="boardLV_MouseLeftButtonDown" />-->
+                        <i:InvokeCommandAction Command="{Binding Source={StaticResource boardViewModel}, Path=boardMouseDownCommand}"
+                                                />
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Border Background="#FFFFFF" CornerRadius="20" >
-                            <i:Interaction.Triggers>
-                                <i:EventTrigger EventName="MouseLeftButtonDown" >
-                                    <i:InvokeCommandAction Command="{Binding Source={StaticResource boardViewModel}, Path=boardMouseDownCommand}"
-                                                           CommandParameter="{}"/>
-                                </i:EventTrigger>
-                            </i:Interaction.Triggers>
+                            
                             <StackPanel Margin="10">
                                 <WrapPanel>
                                     <Label

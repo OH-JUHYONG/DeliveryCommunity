@@ -26,6 +26,7 @@ namespace DeliveryCommunity.ViewModel
         public FoodCategoryToggleCommand FoodCategoryToggleCommand { get; set; }
         public int FoodCategoryMask { get; set; }
         public ListView lv { get; set; }
+        public Article selectedArticle { get; set; }
         //CollectionViewSource: 중간 layer에서 view를 관리해줌 filter를 적용해도 원본은 바뀌지 않음
         public CollectionViewSource ArticleCollectionViewSource { get; set; }
         public ICollectionView ArticleCollectionView
@@ -180,14 +181,20 @@ namespace DeliveryCommunity.ViewModel
             }
             return false;
         }
-        private void ListViewItem_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+
+        private void boardLV_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            //var item = sender as StackPanel;
-            //if (item != null && item.IsSelected)
-            //{
-                PageReplaceVM pageReplace = new PageReplaceVM();
-                pageReplace.NavigateTo("ContentPage");
-            //}
+            Console.WriteLine("Mouse wheel!!!!!!!!!!!! delta : ");
         }
+        //private void ListViewItem_PreviewMouseLeftButtonDown(object sender, MouseEventArgs e)
+        //{
+            
+        //    //var item = sender as StackPanel;
+        //    //if (item != null && item.IsSelected)
+        //    //{
+        //    //PageReplaceVM pageReplace = new PageReplaceVM();
+        //    //pageReplace.NavigateTo("ContentPage");
+        //    //}
+        //}
     }
 }
