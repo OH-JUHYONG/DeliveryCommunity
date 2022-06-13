@@ -191,10 +191,12 @@
                                         x:Name="FoodCategoryLabel"
                                         Content="{Binding Path=Category}"
                                         Style="{StaticResource mainBoradPageUpLabel}" />
+                                    <TextBlock Text="/" Style="{StaticResource mainBoradPageSlice}"/>
                                     <Label
                                         x:Name="PlaceLabel"
                                         Content="{Binding Path=Place}"
                                         Style="{StaticResource mainBoradPageUpLabel}" />
+                                    <TextBlock Text="/" Style="{StaticResource mainBoradPageSlice}"/>
                                     <Label
                                         x:Name="PeopleCountLabel"
                                         Content="{Binding Path=PeopleCount}"
