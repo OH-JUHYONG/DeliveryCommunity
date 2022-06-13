@@ -76,7 +76,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Model\Article.cs" />
-    <Compile Include="Model\BuildingCategoryDictionary.cs" />
     <Compile Include="Model\FoodCategoryDictonary.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -87,7 +86,6 @@
     <Compile Include="ViewModel\boardVM.cs" />
     <Compile Include="ViewModel\Commands\AddArticleCommand.cs" />
     <Compile Include="ViewModel\Commands\BoardMouseDownCommand.cs" />
-    <Compile Include="ViewModel\Commands\BuildingCategoryToggleCommand.cs" />
     <Compile Include="ViewModel\Commands\ContentPageJoinButtonCommand.cs" />
     <Compile Include="ViewModel\Commands\FoodCategoryToggleCommand.cs" />
     <Compile Include="ViewModel\Commands\PageNavigateCommand.cs" />
