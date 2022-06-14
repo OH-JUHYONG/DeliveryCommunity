@@ -109,7 +109,7 @@
                         </StackPanel>
                     </Button>
 
-                    <Expander Header="내가 쓴 글">
+                    <!--<Expander Header="내가 쓴 글">
                         <ItemsControl ItemsSource="{Binding Source={x:Static vm:UserVM.Instance}, Path=ArticleCollectionView}">
                             <ItemsControl.ItemTemplate>
                                 <DataTemplate>
@@ -124,7 +124,7 @@
                                 </DataTemplate>
                             </ItemsControl.ItemTemplate>
                         </ItemsControl>
-                    </Expander>
+                    </Expander>-->
 
 
                 </StackPanel>

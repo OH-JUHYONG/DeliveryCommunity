@@ -31,27 +31,27 @@ namespace DeliveryCommunity.ViewModel
             ClickMyArticleCommand = new ClickMyArticleCommand(this);
             ArticleCollectionViewSource = new CollectionViewSource();
             ArticleCollectionViewSource.Source = boardVM.ArticleCollection;
-            ArticleCollectionViewSource.Filter += ShowOnlyMyItem;
+            //ArticleCollectionViewSource.Filter += ShowOnlyMyItem;
             myArticleList = new List<int>();
             myArticleList.Add(1);
             myArticleList.Add(2);
 
         }
 
-        private void ShowOnlyMyItem(object sender, FilterEventArgs e)
-        {
-            Article article = e.Item as Article;
-            bool hasit = false;
-            foreach(int i in myArticleList)
-            {
-                if(article.ArticleNo == i)
-                {
-                    hasit = true;
-                    break;
-                }
-            }
-            e.Accepted = hasit;
-        }
+        //private void ShowOnlyMyItem(object sender, FilterEventArgs e)
+        //{
+        //    Article article = e.Item as Article;
+        //    bool hasit = false;
+        //    foreach(int i in myArticleList)
+        //    {
+        //        if(article.ArticleNo == i)
+        //        {
+        //            hasit = true;
+        //            break;
+        //        }
+        //    }
+        //    e.Accepted = hasit;
+        //}
 
         public bool HasLocation// 장소를 선택했으면 true
         {
