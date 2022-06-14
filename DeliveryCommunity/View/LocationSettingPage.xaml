@@ -14,6 +14,9 @@
     mc:Ignorable="d">
 
 
+    <Page.Resources>
+        <vm:UserVM x:Key="userVm"></vm:UserVM>
+    </Page.Resources>
 
     <Grid>
         <StackPanel
@@ -35,7 +38,7 @@
                 <ToggleButton
                     x:Name="SelectAllButton"
                     IsChecked="True"
-                    Content="전체"
+                    Content="전체선택"
                     Style="{StaticResource buildingcategoryButton}" />
                 <ToggleButton
                     x:Name="dormitoryToggle"
@@ -73,10 +76,12 @@
                 Height="399"
                 Margin="88,30,87.2,0"
                 VerticalScrollBarVisibility="Auto">
-                <StackPanel>
+                <StackPanel DataContext="{StaticResource userVm}">
 
                     <!--  생활관  -->
                     <Button
+                        Command="{Binding Path=LocationSelectCommand}"
+                        CommandParameter="{Binding ElementName=cham, Path=Text}"
                         Width="450"
                         Style="{StaticResource ImageButtton}"
                         Visibility="{Binding ElementName=dormitoryToggle, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
@@ -87,7 +92,7 @@
                                 Orientation="Horizontal">
                                 <Image Width="150" Source="/Resources/참빛관.jpg" />
                                 <StackPanel Orientation="Vertical">
-                                    <TextBlock Style="{StaticResource ImageBuildingnameTextBlock}" Text="참빛관" />
+                                    <TextBlock x:Name="cham" Style="{StaticResource ImageBuildingnameTextBlock}" Text="참빛관" />
                                     <TextBlock Style="{StaticResource ImageAddressTextBlock}" Text="전북 전주시 덕진구 창포길 93" />
                                 </StackPanel>
                             </StackPanel>

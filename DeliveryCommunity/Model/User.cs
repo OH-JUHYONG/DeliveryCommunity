@@ -8,7 +8,6 @@ namespace DeliveryCommunity.Model
 {
     public class User
     {
-        public static string Place { get; set; }
-        public static string Name { get; set; }
+        
     }
 }
