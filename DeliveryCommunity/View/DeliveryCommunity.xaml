@@ -113,16 +113,19 @@
                         <ItemsControl ItemsSource="{Binding Source={x:Static vm:UserVM.Instance}, Path=ArticleCollectionView}">
                             <ItemsControl.ItemTemplate>
                                 <DataTemplate>
-                                    <Button
-                                    Command="{Binding Source={StaticResource pagevm}, Path=PageNavigateCommand}"
-                                    CommandParameter="UpdatePage"
-                                    Content="{Binding Path=Title}"
-                                    Style="{StaticResource LeftScreenButton}" />
+                                    <StackPanel>
+                                        <Button
+                                            Command="{Binding Source={x:Static vm:UserVM.Instance}, Path=ClickMyArticleCommand}"
+                                            CommandParameter="{Binding ElementName=ArticleNum, Path=Text}"
+                                            Content="{Binding Path=Title}"
+                                            Style="{StaticResource LeftScreenButton}" />
+                                        <TextBlock x:Name="ArticleNum" Text="{Binding Path=ArticleNo}" Visibility="Collapsed" />
+                                    </StackPanel>
                                 </DataTemplate>
                             </ItemsControl.ItemTemplate>
                         </ItemsControl>
                     </Expander>
-                    
+
 
                 </StackPanel>
             </Border>

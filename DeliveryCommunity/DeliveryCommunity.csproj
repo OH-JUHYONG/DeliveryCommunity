@@ -85,6 +85,7 @@
     <Compile Include="ViewModel\boardVM.cs" />
     <Compile Include="ViewModel\Commands\AddArticleCommand.cs" />
     <Compile Include="ViewModel\Commands\BoardMouseDownCommand.cs" />
+    <Compile Include="ViewModel\Commands\ClickMyArticleCommand.cs" />
     <Compile Include="ViewModel\Commands\ContentPageJoinButtonCommand.cs" />
     <Compile Include="ViewModel\Commands\FoodCategoryToggleCommand.cs" />
     <Compile Include="ViewModel\Commands\LocationSelectCommand.cs" />

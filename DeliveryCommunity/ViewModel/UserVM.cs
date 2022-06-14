@@ -15,7 +15,7 @@ namespace DeliveryCommunity.ViewModel
     public class UserVM : DependencyObject
     {
         public LocationSelectCommand LocationSelectCommand { get; set; }
-
+        public ClickMyArticleCommand ClickMyArticleCommand { get; set; }
         //내글보기관련
         //public Dictionary<string, List<int>> UserArticleDB;
         public CollectionViewSource ArticleCollectionViewSource { get; set; }
@@ -28,6 +28,7 @@ namespace DeliveryCommunity.ViewModel
         {
             Place = "장소를 선택하세요";
             LocationSelectCommand = new LocationSelectCommand(this);
+            ClickMyArticleCommand = new ClickMyArticleCommand(this);
             ArticleCollectionViewSource = new CollectionViewSource();
             ArticleCollectionViewSource.Source = boardVM.ArticleCollection;
             ArticleCollectionViewSource.Filter += ShowOnlyMyItem;
