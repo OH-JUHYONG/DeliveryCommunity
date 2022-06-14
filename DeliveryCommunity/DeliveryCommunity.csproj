@@ -94,6 +94,7 @@
     <Compile Include="ViewModel\Commands\SearchByTextCommand.cs" />
     <Compile Include="ViewModel\Commands\WritePageFoodBitToggleCommand.cs" />
     <Compile Include="ViewModel\ContentPageVM.cs" />
+    <Compile Include="ViewModel\LoginVM.cs" />
     <Compile Include="ViewModel\PageReplaceVM.cs" />
     <Compile Include="ViewModel\UserVM.cs" />
     <Compile Include="ViewModel\WriteVM.cs" />
