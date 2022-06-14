@@ -62,7 +62,8 @@ namespace DeliveryCommunity.ViewModel
                 Place = "참빛관",
                 Category = "# 한식",
                 ChatLink = "open.kakao.어쩌구",
-                PeopleCount = 1,
+                PeopleCount = 2,
+                PeopleMaxCount =4,
                 FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["한식"]
             });
             ArticleCollection.Insert(0, new Article()
@@ -73,7 +74,8 @@ namespace DeliveryCommunity.ViewModel
                 Place = "대동관",
                 Category = "# 한식",
                 ChatLink = "open.kakao.어쩌구",
-                PeopleCount = 1,
+                PeopleCount = 3,
+                PeopleMaxCount = 5,
                 FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["한식"]
             });
             ArticleCollection.Insert(0, new Article()
@@ -85,6 +87,7 @@ namespace DeliveryCommunity.ViewModel
                 Category = "# 중식",
                 ChatLink = "open.kakao.어쩌구",
                 PeopleCount = 1,
+                PeopleMaxCount = 3,
                 FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["중식"]
             });
             ArticleCollection.Insert(0, new Article()
@@ -95,7 +98,8 @@ namespace DeliveryCommunity.ViewModel
                 Place = "상과대학 1호관",
                 Category = "# 피자",
                 ChatLink = "open.kakao.어쩌구",
-                PeopleCount = 1,
+                PeopleCount = 5,
+                PeopleMaxCount = 6,
                 FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["피자"]
             });
             ArticleCollection.Insert(0, new Article()
@@ -107,6 +111,7 @@ namespace DeliveryCommunity.ViewModel
                 Category = "# 양식",
                 ChatLink = "open.kakao.어쩌구",
                 PeopleCount = 1,
+                PeopleMaxCount = 2,
                 FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["양식"]
             });
             ArticleCollection.Insert(0, new Article()
@@ -114,10 +119,11 @@ namespace DeliveryCommunity.ViewModel
                 ArticleNo = NextArticleNumber++,
                 Title = "버거킹 먹고 싶어요",
                 Content = "버거킹 지금 할인하는데 같이 주문할 분?",
-                Place = "농업생명과학대학 본관",
+                Place = "대동관",
                 Category = "# 햄버거",
                 ChatLink = "open.kakao.어쩌구",
                 PeopleCount = 1,
+                PeopleMaxCount = 4,
                 FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["햄버거"]
             });
             ArticleCollection.Insert(0, new Article()
@@ -129,6 +135,7 @@ namespace DeliveryCommunity.ViewModel
                 Category = "# 치킨",
                 ChatLink = "open.kakao.어쩌구",
                 PeopleCount = 1,
+                PeopleMaxCount = 3,
                 FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["치킨"]
             });
             ArticleCollection.Insert(0, new Article()
@@ -139,7 +146,8 @@ namespace DeliveryCommunity.ViewModel
                 Place = "공과대학 7호관",
                 Category = "# 분식",
                 ChatLink = "open.kakao.어쩌구",
-                PeopleCount = 1,
+                PeopleCount = 3,
+                PeopleMaxCount = 4,
                 FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["분식"]
             });
         }
