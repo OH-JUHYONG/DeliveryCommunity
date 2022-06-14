@@ -34,7 +34,6 @@ namespace DeliveryCommunity.ViewModel
             get { return ArticleCollectionViewSource.View; }
         }
 
-
         public boardVM()
         {
             boardMouseDownCommand = new BoardMouseDownCommand(this);
@@ -49,7 +48,7 @@ namespace DeliveryCommunity.ViewModel
             
 
         }
-
+        
 
         public void AddTempData()
         {

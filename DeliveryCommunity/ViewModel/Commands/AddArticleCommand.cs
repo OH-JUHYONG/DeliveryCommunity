@@ -37,6 +37,8 @@ namespace DeliveryCommunity.ViewModel.Commands
             article.FoodCategoryBit = WriteVM.FoodCategoryMask;
             article.Category = GetCategoryString(WriteVM.FoodCategoryMask);
             boardVM.ArticleCollection.Insert(0, article);
+            UserVM.Instance.myArticleList.Add(article.ArticleNo);
+            UserVM.Instance.ArticleCollectionView.Refresh();
             //확인을 눌렀을때는 화면이 넘어가야함
             PageReplaceVM pageReplace = new PageReplaceVM();
             pageReplace.NavigateTo("MainBoardPage");
