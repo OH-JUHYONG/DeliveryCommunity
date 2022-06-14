@@ -77,7 +77,6 @@
     </ApplicationDefinition>
     <Compile Include="Model\Article.cs" />
     <Compile Include="Model\FoodCategoryDictonary.cs" />
-    <Compile Include="Model\User.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -89,6 +88,7 @@
     <Compile Include="ViewModel\Commands\ContentPageJoinButtonCommand.cs" />
     <Compile Include="ViewModel\Commands\FoodCategoryToggleCommand.cs" />
     <Compile Include="ViewModel\Commands\LocationSelectCommand.cs" />
+    <Compile Include="ViewModel\Commands\LoginButtonCommand.cs" />
     <Compile Include="ViewModel\Commands\PageNavigateCommand.cs" />
     <Compile Include="ViewModel\Commands\SearchByTextCommand.cs" />
     <Compile Include="ViewModel\Commands\WritePageFoodBitToggleCommand.cs" />

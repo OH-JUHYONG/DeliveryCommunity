@@ -32,7 +32,7 @@ namespace DeliveryCommunity.ViewModel.Commands
             }
             else
             {
-                MessageBox.Show("인원이 초과 되었습니다.");
+                MessageBox.Show("인원이 초과 되었습니다.","오류",MessageBoxButton.OK,MessageBoxImage.Error);
             }
             PageReplaceVM pageReplace = new PageReplaceVM();
             pageReplace.NavigateTo("MainBoardPage");

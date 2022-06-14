@@ -18,7 +18,8 @@ namespace DeliveryCommunity.ViewModel
             Place = "장소를 선택하세요";
             LocationSelectCommand = new LocationSelectCommand(this);
         }
-        public bool HasLocation
+
+        public bool HasLocation// 장소를 선택했으면 true
         {
             get { return (bool)GetValue(HasLocationProperty); }
             set
@@ -42,6 +43,19 @@ namespace DeliveryCommunity.ViewModel
             }
         }
 
+
+        public static readonly DependencyProperty NameProperty =
+        DependencyProperty.Register("Name", typeof(string),
+        typeof(UserVM), new UIPropertyMetadata("로그인하세요"));
+
+        public string Name
+        {
+            get { return (string)GetValue(NameProperty); }
+            set
+            {
+                SetValue(NameProperty, value);
+            }
+        }
         public static UserVM Instance { get; private set; }
 
         static UserVM()
