@@ -70,9 +70,10 @@
                             <TextBlock Style="{StaticResource LeftScreenButtonTextBlock}" Text="위치 설정" />
                         </StackPanel>
                     </Button>
-
-                    <TextBlock Style="{StaticResource LeftScreenButtonTextBlock}" Text="{Binding Source={x:Static vm:UserVM.Instance}, Path=Place}" />
-
+                    <StackPanel Orientation="Horizontal" Margin="0 5 0 0">
+                        <TextBlock Style="{StaticResource LeftScreenButtonTextBlock}" Text="장소:" Visibility="{Binding Source={x:Static vm:UserVM.Instance}, Path=HasLocation, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+                        <TextBlock Style="{StaticResource LeftScreenButtonTextBlock}" Text="{Binding Source={x:Static vm:UserVM.Instance}, Path=Place}" />
+                    </StackPanel>
                     <TextBlock Style="{StaticResource LeftScreenTextBlock}" Text="게시글" />
                     <Button
                         Command="{Binding Source={StaticResource pagevm}, Path=PageNavigateCommand}"

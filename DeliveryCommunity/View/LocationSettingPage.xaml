@@ -98,13 +98,16 @@
                             </StackPanel>
                         </ContentControl>
                     </Button>
-                    <Button Width="450" Style="{StaticResource ImageButtton}"
+                    <Button 
+                        Command="{Binding Path=LocationSelectCommand}"
+                        CommandParameter="{Binding ElementName=dae, Path=Text}"
+                        Width="450" Style="{StaticResource ImageButtton}"
                             Visibility="{Binding ElementName=dormitoryToggle, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
                         <ContentControl Width="600">
                             <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
                                 <Image Width="150" Source="/Resources/대동관.jpg" />
                                 <StackPanel Orientation="Vertical">
-                                    <TextBlock Style="{StaticResource ImageBuildingnameTextBlock}" Text="대동관" />
+                                    <TextBlock x:Name="dae" Style="{StaticResource ImageBuildingnameTextBlock}" Text="대동관" />
                                     <TextBlock Style="{StaticResource ImageAddressTextBlock}" Text="전북 전주시 덕진구 창포길 93" />
                                 </StackPanel>
                             </StackPanel>
@@ -112,7 +115,10 @@
                     </Button>
 
                     <!--  공대  -->
-                    <Button Width="450" Style="{StaticResource ImageButtton}"
+                    <Button 
+                        Command="{Binding Path=LocationSelectCommand}"
+                        CommandParameter="{Binding ElementName=e1, Path=Text}"
+                        Width="450" Style="{StaticResource ImageButtton}"
                             Visibility="{Binding ElementName=engineering, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
                         <ContentControl Width="600">
                             <StackPanel
@@ -121,13 +127,16 @@
                                 Orientation="Horizontal">
                                 <Image Width="150" Source="/Resources/공과대학 1호관.jpg" />
                                 <StackPanel Orientation="Vertical">
-                                    <TextBlock Style="{StaticResource ImageBuildingnameTextBlock}" Text="공과대학 1호관" />
+                                    <TextBlock x:Name="e1" Style="{StaticResource ImageBuildingnameTextBlock}" Text="공과대학 1호관" />
                                     <TextBlock Style="{StaticResource ImageAddressTextBlock}" Text="전북 전주시 덕진구 백제대로 567" />
                                 </StackPanel>
                             </StackPanel>
                         </ContentControl>
                     </Button>
-                    <Button Width="450" Style="{StaticResource ImageButtton}"
+                    <Button 
+                        Command="{Binding Path=LocationSelectCommand}"
+                        CommandParameter="{Binding ElementName=e7, Path=Text}"
+                        Width="450" Style="{StaticResource ImageButtton}"
                             Visibility="{Binding ElementName=engineering, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
                         <ContentControl Width="600">
                             <StackPanel
@@ -136,7 +145,7 @@
                                 Orientation="Horizontal">
                                 <Image Width="150" Source="/Resources/공과대학 7호관.jpg" />
                                 <StackPanel Orientation="Vertical">
-                                    <TextBlock Style="{StaticResource ImageBuildingnameTextBlock}" Text="공과대학 7호관" />
+                                    <TextBlock x:Name="e7" Style="{StaticResource ImageBuildingnameTextBlock}" Text="공과대학 7호관" />
                                     <TextBlock Style="{StaticResource ImageAddressTextBlock}" Text="전북 전주시 덕진구 백제대로 567" />
                                 </StackPanel>
                             </StackPanel>
@@ -144,7 +153,10 @@
                     </Button>
 
                     <!--  농대  -->
-                    <Button Width="450" Style="{StaticResource ImageButtton}"
+                    <Button 
+                        Command="{Binding Path=LocationSelectCommand}"
+                        CommandParameter="{Binding ElementName=ff, Path=Text}"
+                        Width="450" Style="{StaticResource ImageButtton}"
                             Visibility="{Binding ElementName=farmer, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
                         <ContentControl Width="600">
                             <StackPanel
@@ -153,13 +165,16 @@
                                 Orientation="Horizontal">
                                 <Image Width="150" Source="/Resources/농업생명과학대학 본관.jpg" />
                                 <StackPanel Orientation="Vertical">
-                                    <TextBlock Style="{StaticResource ImageBuildingnameTextBlock}" Text="농업생명과학대학 본관" />
+                                    <TextBlock x:Name="ff" Style="{StaticResource ImageBuildingnameTextBlock}" Text="농업생명과학대학 본관" />
                                     <TextBlock Style="{StaticResource ImageAddressTextBlock}" Text="전북 전주시 덕진구 백제대로 567" />
                                 </StackPanel>
                             </StackPanel>
                         </ContentControl>
                     </Button>
-                    <Button Width="450" Style="{StaticResource ImageButtton}"
+                    <Button 
+                        Command="{Binding Path=LocationSelectCommand}"
+                        CommandParameter="{Binding ElementName=f1, Path=Text}"
+                        Width="450" Style="{StaticResource ImageButtton}"
                             Visibility="{Binding ElementName=farmer, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
                         <ContentControl Width="600">
                             <StackPanel
@@ -168,7 +183,7 @@
                                 Orientation="Horizontal">
                                 <Image Width="150" Source="/Resources/농업생명과학대학 1호관.jpg" />
                                 <StackPanel Orientation="Vertical">
-                                    <TextBlock Style="{StaticResource ImageBuildingnameTextBlock}" Text="농업생명과학대학 1호관" />
+                                    <TextBlock x:Name="f1" Style="{StaticResource ImageBuildingnameTextBlock}" Text="농업생명과학대학 1호관" />
                                     <TextBlock Style="{StaticResource ImageAddressTextBlock}" Text="전북 전주시 덕진구 백제대로 567" />
                                 </StackPanel>
                             </StackPanel>
@@ -176,7 +191,10 @@
                     </Button>
 
                     <!--  인문대학  -->
-                    <Button Width="450" Style="{StaticResource ImageButtton}"
+                    <Button 
+                        Command="{Binding Path=LocationSelectCommand}"
+                        CommandParameter="{Binding ElementName=u1, Path=Text}"
+                        Width="450" Style="{StaticResource ImageButtton}"
                             Visibility="{Binding ElementName=unemployed, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
                         <ContentControl Width="600">
                             <StackPanel
@@ -185,13 +203,16 @@
                                 Orientation="Horizontal">
                                 <Image Width="150" Source="/Resources/인문대학 1호관.jpg" />
                                 <StackPanel Orientation="Vertical">
-                                    <TextBlock Style="{StaticResource ImageBuildingnameTextBlock}" Text="인문대학 1호관" />
+                                    <TextBlock x:Name="u1" Style="{StaticResource ImageBuildingnameTextBlock}" Text="인문대학 1호관" />
                                     <TextBlock Style="{StaticResource ImageAddressTextBlock}" Text="전북 전주시 덕진구 백제대로 567" />
                                 </StackPanel>
                             </StackPanel>
                         </ContentControl>
                     </Button>
-                    <Button Width="450" Style="{StaticResource ImageButtton}"
+                    <Button 
+                        Command="{Binding Path=LocationSelectCommand}"
+                        CommandParameter="{Binding ElementName=u2, Path=Text}"
+                        Width="450" Style="{StaticResource ImageButtton}"
                             Visibility="{Binding ElementName=unemployed, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
                         <ContentControl Width="600">
                             <StackPanel
@@ -200,7 +221,7 @@
                                 Orientation="Horizontal">
                                 <Image Width="150" Source="/Resources/인문대학 2호관.jpg" />
                                 <StackPanel Orientation="Vertical">
-                                    <TextBlock Style="{StaticResource ImageBuildingnameTextBlock}" Text="인문대학 2호관" />
+                                    <TextBlock x:Name="u2" Style="{StaticResource ImageBuildingnameTextBlock}" Text="인문대학 2호관" />
                                     <TextBlock Style="{StaticResource ImageAddressTextBlock}" Text="전북 전주시 덕진구 백제대로 567" />
                                 </StackPanel>
                             </StackPanel>
@@ -208,7 +229,10 @@
                     </Button>
 
                     <!--  상과대학  -->
-                    <Button Width="450" Style="{StaticResource ImageButtton}"
+                    <Button 
+                        Command="{Binding Path=LocationSelectCommand}"
+                        CommandParameter="{Binding ElementName=c1, Path=Text}"
+                        Width="450" Style="{StaticResource ImageButtton}"
                             Visibility="{Binding ElementName=commerce, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
                         <ContentControl Width="600">
                             <StackPanel
@@ -217,13 +241,16 @@
                                 Orientation="Horizontal">
                                 <Image Width="150" Source="/Resources/상과대학 1호관.jpg" />
                                 <StackPanel Orientation="Vertical">
-                                    <TextBlock Style="{StaticResource ImageBuildingnameTextBlock}" Text="상과대학 1호관" />
+                                    <TextBlock x:Name="c1" Style="{StaticResource ImageBuildingnameTextBlock}" Text="상과대학 1호관" />
                                     <TextBlock Style="{StaticResource ImageAddressTextBlock}" Text="전북 전주시 덕진구 백제대로 567" />
                                 </StackPanel>
                             </StackPanel>
                         </ContentControl>
                     </Button>
-                    <Button Width="450" Style="{StaticResource ImageButtton}"
+                    <Button 
+                        Command="{Binding Path=LocationSelectCommand}"
+                        CommandParameter="{Binding ElementName=c2, Path=Text}"
+                        Width="450" Style="{StaticResource ImageButtton}"
                             Visibility="{Binding ElementName=commerce, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
                         <ContentControl Width="600">
                             <StackPanel
@@ -232,7 +259,7 @@
                                 Orientation="Horizontal">
                                 <Image Width="150" Source="/Resources/상과대학 2호관.jpg" />
                                 <StackPanel Orientation="Vertical">
-                                    <TextBlock Style="{StaticResource ImageBuildingnameTextBlock}" Text="상과대학 2호관" />
+                                    <TextBlock x:Name="c2" Style="{StaticResource ImageBuildingnameTextBlock}" Text="상과대학 2호관" />
                                     <TextBlock Style="{StaticResource ImageAddressTextBlock}" Text="전북 전주시 덕진구 백제대로 567" />
                                 </StackPanel>
                             </StackPanel>
@@ -240,7 +267,10 @@
                     </Button>
 
                     <!--  사범대  -->
-                    <Button Width="450" Style="{StaticResource ImageButtton}"
+                    <Button 
+                        Command="{Binding Path=LocationSelectCommand}"
+                        CommandParameter="{Binding ElementName=ed1, Path=Text}"
+                        Width="450" Style="{StaticResource ImageButtton}"
                             Visibility="{Binding ElementName=education, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
                         <ContentControl Width="600">
                             <StackPanel
@@ -249,7 +279,7 @@
                                 Orientation="Horizontal">
                                 <Image Width="150" Source="/Resources/사범대학.jpg" />
                                 <StackPanel Orientation="Vertical">
-                                    <TextBlock Style="{StaticResource ImageBuildingnameTextBlock}" Text="사범대학" />
+                                    <TextBlock x:Name="ed1" Style="{StaticResource ImageBuildingnameTextBlock}" Text="사범대학" />
                                     <TextBlock Style="{StaticResource ImageAddressTextBlock}" Text="전북 전주시 덕진구 백제대로 567" />
                                 </StackPanel>
                             </StackPanel>
@@ -257,7 +287,10 @@
                     </Button>
 
                     <!--  예대  -->
-                    <Button Width="450" Style="{StaticResource ImageButtton}"
+                    <Button 
+                        Command="{Binding Path=LocationSelectCommand}"
+                        CommandParameter="{Binding ElementName=a1, Path=Text}"
+                        Width="450" Style="{StaticResource ImageButtton}"
                             Visibility="{Binding ElementName=arts, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
                         <ContentControl Width="600">
                             <StackPanel
@@ -266,7 +299,7 @@
                                 Orientation="Horizontal">
                                 <Image Width="150" Source="/Resources/예술대학 본관.jpg" />
                                 <StackPanel Orientation="Vertical">
-                                    <TextBlock Style="{StaticResource ImageBuildingnameTextBlock}" Text="예술대학 본관" />
+                                    <TextBlock x:Name="a1" Style="{StaticResource ImageBuildingnameTextBlock}" Text="예술대학 본관" />
                                     <TextBlock Style="{StaticResource ImageAddressTextBlock}" Text="전북 전주시 덕진구 창포길 93" />
                                 </StackPanel>
                             </StackPanel>
@@ -274,7 +307,10 @@
                     </Button>
 
                     <!--  자연대  -->
-                    <Button Width="450" Style="{StaticResource ImageButtton}"
+                    <Button 
+                        Command="{Binding Path=LocationSelectCommand}"
+                        CommandParameter="{Binding ElementName=n1, Path=Text}"
+                        Width="450" Style="{StaticResource ImageButtton}"
                             Visibility="{Binding ElementName=nature, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
                         <ContentControl Width="600">
                             <StackPanel
@@ -283,13 +319,16 @@
                                 Orientation="Horizontal">
                                 <Image Width="150" Source="/Resources/자연과학대학본관.jpg" />
                                 <StackPanel Orientation="Vertical">
-                                    <TextBlock Style="{StaticResource ImageBuildingnameTextBlock}" Text="자연과학대학본관" />
+                                    <TextBlock x:Name="n1" Style="{StaticResource ImageBuildingnameTextBlock}" Text="자연과학대학본관" />
                                     <TextBlock Style="{StaticResource ImageAddressTextBlock}" Text="전북 전주시 덕진구 백제대로 567" />
                                 </StackPanel>
                             </StackPanel>
                         </ContentControl>
                     </Button>
-                    <Button Width="450" Style="{StaticResource ImageButtton}"
+                    <Button 
+                        Command="{Binding Path=LocationSelectCommand}"
+                        CommandParameter="{Binding ElementName=n3, Path=Text}"
+                        Width="450" Style="{StaticResource ImageButtton}"
                             Visibility="{Binding ElementName=nature, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
                         <ContentControl Width="600">
                             <StackPanel
@@ -298,7 +337,7 @@
                                 Orientation="Horizontal">
                                 <Image Width="150" Source="/Resources/자연과학대학 3호관.jpg" />
                                 <StackPanel Orientation="Vertical">
-                                    <TextBlock Style="{StaticResource ImageBuildingnameTextBlock}" Text="자연과학대학 3호관" />
+                                    <TextBlock x:Name="n3" Style="{StaticResource ImageBuildingnameTextBlock}" Text="자연과학대학 3호관" />
                                     <TextBlock Style="{StaticResource ImageAddressTextBlock}" Text="전북 전주시 덕진구 백제대로 567" />
                                 </StackPanel>
                             </StackPanel>

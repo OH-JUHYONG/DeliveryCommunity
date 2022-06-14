@@ -34,6 +34,7 @@ namespace DeliveryCommunity.ViewModel.Commands
             if(result == MessageBoxResult.Yes)
             {
                 UserVM.Instance.Place = loc;
+                UserVM.Instance.HasLocation = true;
             }
         }
     }
