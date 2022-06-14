@@ -28,6 +28,7 @@ namespace DeliveryCommunity.ViewModel.Commands
             article.PeopleMaxCount = WriteVM.PeopleMaxCount;
             article.Content = WriteVM.Content;
             article.Title = WriteVM.Title;
+            article.Place = UserVM.GetPlace();
             article.PeopleCount = WriteVM.PeopleCount;
             article.ExpireHour = WriteVM.ExpireHour;
             article.ExpireMin = WriteVM.ExpireMin;

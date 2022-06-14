@@ -1,22 +1,45 @@
 ﻿using DeliveryCommunity.ViewModel.Commands;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace DeliveryCommunity.ViewModel
 {
-    public class UserVM
+    public class UserVM : DependencyObject
     {
-        //현재 유저의 장소와 이름
-        public static string Place { get; set; }
-        public static string Name { get; set; }
-
         public LocationSelectCommand LocationSelectCommand { get; set; }
+
         public UserVM()
         {
+            Place = "장소를 선택하세요";
             LocationSelectCommand = new LocationSelectCommand(this);
         }
+
+
+        public static readonly DependencyProperty PlaceProperty =
+        DependencyProperty.Register("Place", typeof(string),
+        typeof(UserVM), new UIPropertyMetadata("없음"));
+
+        public string Place // 호출시 Instance.Place로 해야 같은 vm의 place접근가능 GetPlace()를 이용하세요
+        {
+            get { return (string)GetValue(PlaceProperty); }
+            set { SetValue(PlaceProperty, value); }
+        }
+
+        public static UserVM Instance { get; private set; }
+
+        static UserVM()
+        {
+            Instance = new UserVM();
+        }
+        public static string GetPlace()
+        {
+            return Instance.Place;
+        }
+        
     }
 }

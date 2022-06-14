@@ -29,11 +29,11 @@ namespace DeliveryCommunity.ViewModel.Commands
             string loc = (string)parameter;
             string question ="{0}이 맞나요?";
             question = string.Format(question, loc);
-            var result = MessageBox.Show(question, "장소 선택", MessageBoxButton.YesNo);
+            var result = MessageBox.Show(question, "장소 선택", MessageBoxButton.YesNo,MessageBoxImage.Question);
 
             if(result == MessageBoxResult.Yes)
             {
-                UserVM.Place = loc;
+                UserVM.Instance.Place = loc;
             }
         }
     }
