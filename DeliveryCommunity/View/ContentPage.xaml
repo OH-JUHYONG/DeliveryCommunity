@@ -32,7 +32,7 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="5*" />
-            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
@@ -45,7 +45,7 @@
             HorizontalAlignment="Right">
             <Button
                 Margin="10,0,10,0"
-                Command="{Binding AddArticleCommand}"
+                Command="{Binding ContentPageJoinButtonCommand}"
                 Content="참여"
                 Style="{StaticResource completeButton}">
                 <Button.Resources>
@@ -94,75 +94,9 @@
         <StackPanel
             Grid.Row="4"
             Grid.Column="2"
-            Margin="10,0,10,0"
-            VerticalAlignment="Center">
-            <StackPanel
-                Margin="0,5,0,10"
-                HorizontalAlignment="Center"
-                Orientation="Horizontal">
-                <ToggleButton Content="# 한식" Style="{StaticResource foodcategoryButton}">
-                    <ToggleButton.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="17" />
-                        </Style>
-                    </ToggleButton.Resources>
-                </ToggleButton>
-                <ToggleButton Content="# 일식" Style="{StaticResource foodcategoryButton}">
-                    <ToggleButton.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="17" />
-                        </Style>
-                    </ToggleButton.Resources>
-                </ToggleButton>
-                <ToggleButton Content="# 중식" Style="{StaticResource foodcategoryButton}">
-                    <ToggleButton.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="17" />
-                        </Style>
-                    </ToggleButton.Resources>
-                </ToggleButton>
-                <ToggleButton Content="# 분식" Style="{StaticResource foodcategoryButton}">
-                    <ToggleButton.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="17" />
-                        </Style>
-                    </ToggleButton.Resources>
-                </ToggleButton>
-            </StackPanel>
-
-            <StackPanel
-                Margin="0,0,0,10"
-                HorizontalAlignment="Center"
-                Orientation="Horizontal">
-                <ToggleButton Content="# 양식" Style="{StaticResource foodcategoryButton}">
-                    <ToggleButton.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="17" />
-                        </Style>
-                    </ToggleButton.Resources>
-                </ToggleButton>
-                <ToggleButton Content="# 치킨" Style="{StaticResource foodcategoryButton}">
-                    <ToggleButton.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="17" />
-                        </Style>
-                    </ToggleButton.Resources>
-                </ToggleButton>
-                <ToggleButton Content="# 피자" Style="{StaticResource foodcategoryButton}">
-                    <ToggleButton.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="17" />
-                        </Style>
-                    </ToggleButton.Resources>
-                </ToggleButton>
-                <ToggleButton Content="# 햄버거" Style="{StaticResource foodcategoryButton}">
-                    <ToggleButton.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="17" />
-                        </Style>
-                    </ToggleButton.Resources>
-                </ToggleButton>
-            </StackPanel>
+            Margin="5"
+            Background="#FFFFFF">
+            <TextBox Style="{StaticResource searchTextBox}" Text="{Binding Path=Category}" />
         </StackPanel>
 
         <!--  채팅주소 부분  -->
@@ -190,7 +124,10 @@
             Grid.Row="6"
             Grid.Column="2"
             Orientation="Horizontal">
-            <TextBlock  Style="{StaticResource writePageTextBlock}"/>
+            <TextBlock Text="{Binding Path=PeopleCount}" Style="{StaticResource writePageTextBlock}"/>
+            <TextBlock Style="{StaticResource writePageTextBlock}" Text="명" />
+            <TextBlock Style="{StaticResource writePageTextBlock}" Text="/" />
+            <TextBlock Text="{Binding Path=PeopleMaxCount}" Style="{StaticResource writePageTextBlock}"/>
             <TextBlock Style="{StaticResource writePageTextBlock}" Text="명" />
         </StackPanel>
 
@@ -205,12 +142,12 @@
             Grid.Row="7"
             Grid.Column="2"
             Orientation="Horizontal">
-            <TextBlock  Style="{StaticResource writePageTextBlock}"/>
+            <TextBlock Text="{Binding Path=ExpireHour}" Style="{StaticResource writePageTextBlock}"/>
             <TextBlock
                 Margin="10,0,0,0"
                 Style="{StaticResource writePageTextBlock}"
                 Text="시" />
-            <TextBlock  Style="{StaticResource writePageTextBlock}"/>
+            <TextBlock Text="{Binding Path=ExpireMin}" Style="{StaticResource writePageTextBlock}"/>
             <TextBlock
                 Margin="10,0,0,0"
                 Style="{StaticResource writePageTextBlock}"

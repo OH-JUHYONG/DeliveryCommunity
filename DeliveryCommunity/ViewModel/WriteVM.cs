@@ -17,6 +17,10 @@ namespace DeliveryCommunity.ViewModel
         public string Title { get; set; }
         public string Content { get; set; }
         public string ChatLink { get; set; }
+        public int PeopleMaxCount { get; set; }
+        public int PeopleCount { get; set; }
+        public int ExpireHour { get; set; }
+        public int ExpireMin { get; set; }
         public int FoodCategoryMask { get; set; }
         public WritePageFoodBitToggleCommand WritePageFoodBitToggleCommand{get;set;}
         public AddArticleCommand AddArticleCommand { get; set; }
@@ -24,7 +28,11 @@ namespace DeliveryCommunity.ViewModel
         {
             WritePageFoodBitToggleCommand = new WritePageFoodBitToggleCommand(this);
             AddArticleCommand = new AddArticleCommand(this);
+            PeopleMaxCount = 2;
+            PeopleCount = 1;
             Title = "";
+            ExpireHour = 0;
+            ExpireMin = 0;
             Content = "";
             ChatLink = "";
             FoodCategoryMask = 0;

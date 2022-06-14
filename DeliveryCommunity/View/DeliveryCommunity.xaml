@@ -7,6 +7,7 @@
     xmlns:local="clr-namespace:DeliveryCommunity.View"
     xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:DeliveryCommunity.ViewModel"
     Title="DeliveryCommunity"
     Width="900"
     Height="600"
@@ -15,14 +16,18 @@
     WindowStartupLocation="CenterScreen"
     WindowStyle="None"
     mc:Ignorable="d">
-    
+
     <Window.Resources>
         <ResourceDictionary>
             <Style x:Key="styleless" />
+            <vm:UserVM x:Key="userVM" />
         </ResourceDictionary>
     </Window.Resources>
 
-    <Border  CornerRadius="25" Padding="20" Background="#F8F8F8">
+    <Border
+        Padding="20"
+        Background="#F8F8F8"
+        CornerRadius="25">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*" />
@@ -37,42 +42,57 @@
                     </LinearGradientBrush>
                 </Border.Background>
 
-                <StackPanel>
-                    <TextBlock Text="유저 정보" Style="{StaticResource LeftScreenTextBlock}"/>
-                    <Button Command="{Binding Source={StaticResource pagevm}, Path=PageNavigateCommand}"
-                            CommandParameter="LoginPage" Style="{StaticResource LeftScreenButton}">
+                <StackPanel DataContext="{StaticResource userVM}">
+                    <TextBlock Style="{StaticResource LeftScreenTextBlock}" Text="유저 정보" />
+                    <Button
+                        Command="{Binding Source={StaticResource pagevm}, Path=PageNavigateCommand}"
+                        CommandParameter="LoginPage"
+                        Style="{StaticResource LeftScreenButton}">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon
                                 Width="25"
                                 Height="25"
-                                Kind="Login" Foreground="#00539C"/>
-                            <TextBlock Text="로그인" Style="{StaticResource LeftScreenButtonTextBlock}"/>
+                                Foreground="#00539C"
+                                Kind="Login" />
+                            <TextBlock Style="{StaticResource LeftScreenButtonTextBlock}" Text="로그인" />
                         </StackPanel>
                     </Button>
+                    <TextBlock
+                        Margin="15,5,0,0"
+                        Style="{StaticResource LeftScreenButtonTextBlock}"
+                        Text="{Binding Source={x:Static vm:UserVM.Instance}, Path=Name}" />
                     <Button
                         Command="{Binding Source={StaticResource pagevm}, Path=PageNavigateCommand}"
-                        CommandParameter="LocationSettingPage" Style="{StaticResource LeftScreenButton}">
+                        CommandParameter="LocationSettingPage"
+                        Style="{StaticResource LeftScreenButton}">
                         <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                             <materialDesign:PackIcon
                                 Width="25"
                                 Height="25"
-                                Kind="Location" Foreground="#FFD662" />
-                            <TextBlock
-                                Text="위치 설정" Style="{StaticResource LeftScreenButtonTextBlock}"/>
+                                Foreground="#FFD662"
+                                Kind="Location" />
+                            <TextBlock Style="{StaticResource LeftScreenButtonTextBlock}" Text="위치 설정" />
                         </StackPanel>
                     </Button>
-
-                    <TextBlock Text="게시글" Style="{StaticResource LeftScreenTextBlock}"/>
+                    <StackPanel Margin="0,5,0,0" Orientation="Horizontal">
+                        <TextBlock
+                            Style="{StaticResource LeftScreenButtonTextBlock}"
+                            Text="장소:"
+                            Visibility="{Binding Source={x:Static vm:UserVM.Instance}, Path=HasLocation, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                        <TextBlock Style="{StaticResource LeftScreenButtonTextBlock}" Text="{Binding Source={x:Static vm:UserVM.Instance}, Path=Place}" />
+                    </StackPanel>
+                    <TextBlock Style="{StaticResource LeftScreenTextBlock}" Text="게시글" />
                     <Button
                         Command="{Binding Source={StaticResource pagevm}, Path=PageNavigateCommand}"
-                        CommandParameter="MainBoardPage" Style="{StaticResource LeftScreenButton}">
+                        CommandParameter="MainBoardPage"
+                        Style="{StaticResource LeftScreenButton}">
                         <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                             <materialDesign:PackIcon
                                 Width="25"
                                 Height="25"
-                                Kind="Paper" Foreground="#2BAE66"/>
-                            <TextBlock
-                                Text="모집글" Style="{StaticResource LeftScreenButtonTextBlock}"/>
+                                Foreground="#2BAE66"
+                                Kind="Paper" />
+                            <TextBlock Style="{StaticResource LeftScreenButtonTextBlock}" Text="모집글" />
                         </StackPanel>
                     </Button>
                     <Button
@@ -83,22 +103,30 @@
                             <materialDesign:PackIcon
                                 Width="25"
                                 Height="25"
-                                Kind="NoteAdd" Foreground="#F95700" />
-                            <TextBlock
-                                Text="글쓰기" Style="{StaticResource LeftScreenButtonTextBlock}"/>
+                                Foreground="#F95700"
+                                Kind="NoteAdd" />
+                            <TextBlock Style="{StaticResource LeftScreenButtonTextBlock}" Text="글쓰기" />
                         </StackPanel>
                     </Button>
-                    <Button 
-                        Command="{Binding Source={StaticResource pagevm}, Path=PageNavigateCommand}"
-                        CommandParameter="UpdatePage" Style="{StaticResource LeftScreenButton}">
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <materialDesign:PackIcon                                
-                                Width="25" 
-                                Height="25"
-                                Kind="Pencil" Foreground="#A04EF6"/>
-                            <TextBlock Text="내가 쓴 글" Style="{StaticResource LeftScreenButtonTextBlock}"/>
-                        </StackPanel>
-                    </Button>
+
+                    <Expander Header="내가 쓴 글">
+                        <ItemsControl ItemsSource="{Binding Source={x:Static vm:UserVM.Instance}, Path=ArticleCollectionView}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel>
+                                        <Button
+                                            Command="{Binding Source={x:Static vm:UserVM.Instance}, Path=ClickMyArticleCommand}"
+                                            CommandParameter="{Binding ElementName=ArticleNum, Path=Text}"
+                                            Content="{Binding Path=Title}"
+                                            Style="{StaticResource LeftScreenButton}" />
+                                        <TextBlock x:Name="ArticleNum" Text="{Binding Path=ArticleNo}" Visibility="Collapsed" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </Expander>
+
+
                 </StackPanel>
             </Border>
 

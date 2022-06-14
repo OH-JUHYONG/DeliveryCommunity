@@ -76,7 +76,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Model\Article.cs" />
-    <Compile Include="Model\BuildingCategoryDictionary.cs" />
     <Compile Include="Model\FoodCategoryDictonary.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -85,15 +84,19 @@
     </Compile>
     <Compile Include="ViewModel\boardVM.cs" />
     <Compile Include="ViewModel\Commands\AddArticleCommand.cs" />
-    <Compile Include="ViewModel\Commands\BoardMouseCommand.cs" />
     <Compile Include="ViewModel\Commands\BoardMouseDownCommand.cs" />
-    <Compile Include="ViewModel\Commands\BuildingCategoryToggleCommand.cs" />
+    <Compile Include="ViewModel\Commands\ClickMyArticleCommand.cs" />
+    <Compile Include="ViewModel\Commands\ContentPageJoinButtonCommand.cs" />
     <Compile Include="ViewModel\Commands\FoodCategoryToggleCommand.cs" />
+    <Compile Include="ViewModel\Commands\LocationSelectCommand.cs" />
+    <Compile Include="ViewModel\Commands\LoginButtonCommand.cs" />
     <Compile Include="ViewModel\Commands\PageNavigateCommand.cs" />
     <Compile Include="ViewModel\Commands\SearchByTextCommand.cs" />
     <Compile Include="ViewModel\Commands\WritePageFoodBitToggleCommand.cs" />
     <Compile Include="ViewModel\ContentPageVM.cs" />
+    <Compile Include="ViewModel\LoginVM.cs" />
     <Compile Include="ViewModel\PageReplaceVM.cs" />
+    <Compile Include="ViewModel\UserVM.cs" />
     <Compile Include="ViewModel\WriteVM.cs" />
     <Compile Include="View\ContentPage.xaml.cs">
       <DependentUpon>ContentPage.xaml</DependentUpon>

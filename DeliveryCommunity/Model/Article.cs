@@ -21,6 +21,9 @@ namespace DeliveryCommunity.Model
         public string Content { get; set; }
         public string Place { get; set; }
         public int PeopleCount { get; set; }
+        public int PeopleMaxCount { get; set; }
+        public int ExpireHour { get; set; }
+        public int ExpireMin { get; set; }
         public string Category { get; set; }
         public string ChatLink { get; set; }
         public int FoodCategoryBit { get; set; }
@@ -32,6 +35,9 @@ namespace DeliveryCommunity.Model
             Content = "aaaaaaaaaaaaaaaaaabbbbcbcbcbcbddd";
             Place = "공대 7호관";
             PeopleCount = 1;
+            PeopleMaxCount = 3;
+            ExpireHour = 20;
+            ExpireMin = 30;
             Category = "치킨";
             ChatLink = "openkakao";
             FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit[Category];

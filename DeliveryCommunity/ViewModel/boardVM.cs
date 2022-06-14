@@ -34,7 +34,6 @@ namespace DeliveryCommunity.ViewModel
             get { return ArticleCollectionViewSource.View; }
         }
 
-
         public boardVM()
         {
             boardMouseDownCommand = new BoardMouseDownCommand(this);
@@ -49,14 +48,14 @@ namespace DeliveryCommunity.ViewModel
             
 
         }
-
+        
 
         public void AddTempData()
         {
             if(ArticleCollection.Count > 1) return;//page가 바뀔때마다 실행되므로 한번실행하면 막아둠
 
-            NextArticleNumber = 1;
-            ArticleCollection.Add(new Article() {
+            NextArticleNumber = 0;
+            ArticleCollection.Insert(0,new Article() {
                 ArticleNo = NextArticleNumber++,
                 Title = "더운데 냉면 같이 드실 분?",
                 Content = "터미널 근처에 있는 정가네 냉면 같이 주문할 사람?",
@@ -66,7 +65,7 @@ namespace DeliveryCommunity.ViewModel
                 PeopleCount = 1,
                 FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["한식"]
             });
-            ArticleCollection.Add(new Article()
+            ArticleCollection.Insert(0, new Article()
             {
                 ArticleNo = NextArticleNumber++,
                 Title = "육개장 먹고 싶어요",
@@ -77,7 +76,7 @@ namespace DeliveryCommunity.ViewModel
                 PeopleCount = 1,
                 FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["한식"]
             });
-            ArticleCollection.Add(new Article()
+            ArticleCollection.Insert(0, new Article()
             {
                 ArticleNo = NextArticleNumber++,
                 Title = "비오는데 짬뽕",
@@ -88,7 +87,7 @@ namespace DeliveryCommunity.ViewModel
                 PeopleCount = 1,
                 FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["중식"]
             });
-            ArticleCollection.Add(new Article()
+            ArticleCollection.Insert(0, new Article()
             {
                 ArticleNo = NextArticleNumber++,
                 Title = "피자 먹을 분?",
@@ -99,7 +98,7 @@ namespace DeliveryCommunity.ViewModel
                 PeopleCount = 1,
                 FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["피자"]
             });
-            ArticleCollection.Add(new Article()
+            ArticleCollection.Insert(0, new Article()
             {
                 ArticleNo = NextArticleNumber++,
                 Title = "아웃백 딜리버리",
@@ -110,7 +109,7 @@ namespace DeliveryCommunity.ViewModel
                 PeopleCount = 1,
                 FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["양식"]
             });
-            ArticleCollection.Add(new Article()
+            ArticleCollection.Insert(0, new Article()
             {
                 ArticleNo = NextArticleNumber++,
                 Title = "버거킹 먹고 싶어요",
@@ -121,7 +120,7 @@ namespace DeliveryCommunity.ViewModel
                 PeopleCount = 1,
                 FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["햄버거"]
             });
-            ArticleCollection.Add(new Article()
+            ArticleCollection.Insert(0, new Article()
             {
                 ArticleNo = NextArticleNumber++,
                 Title = "치킨 한자리 남는데",
@@ -132,7 +131,7 @@ namespace DeliveryCommunity.ViewModel
                 PeopleCount = 1,
                 FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["치킨"]
             });
-            ArticleCollection.Add(new Article()
+            ArticleCollection.Insert(0, new Article()
             {
                 ArticleNo = NextArticleNumber++,
                 Title = "엽떡 로제 떡볶이 먹고 싶어요ㅠㅠ",

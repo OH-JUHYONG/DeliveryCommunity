@@ -25,13 +25,20 @@ namespace DeliveryCommunity.ViewModel.Commands
         public void Execute(object parameter)
         {
             Article article = new Article();
+            article.PeopleMaxCount = WriteVM.PeopleMaxCount;
             article.Content = WriteVM.Content;
             article.Title = WriteVM.Title;
+            article.Place = UserVM.GetPlace();
+            article.PeopleCount = WriteVM.PeopleCount;
+            article.ExpireHour = WriteVM.ExpireHour;
+            article.ExpireMin = WriteVM.ExpireMin;
             article.ChatLink= WriteVM.ChatLink;
             article.ArticleNo = boardVM.NextArticleNumber++;
             article.FoodCategoryBit = WriteVM.FoodCategoryMask;
             article.Category = GetCategoryString(WriteVM.FoodCategoryMask);
             boardVM.ArticleCollection.Insert(0, article);
+            UserVM.Instance.myArticleList.Add(article.ArticleNo);
+            UserVM.Instance.ArticleCollectionView.Refresh();
             //확인을 눌렀을때는 화면이 넘어가야함
             PageReplaceVM pageReplace = new PageReplaceVM();
             pageReplace.NavigateTo("MainBoardPage");
