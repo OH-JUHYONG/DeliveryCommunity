@@ -64,6 +64,8 @@ namespace DeliveryCommunity.ViewModel
                 ChatLink = "open.kakao.어쩌구",
                 PeopleCount = 2,
                 PeopleMaxCount =4,
+                ExpireHour =10,
+                ExpireMin =10,
                 FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["한식"]
             });
             ArticleCollection.Insert(0, new Article()
@@ -76,6 +78,8 @@ namespace DeliveryCommunity.ViewModel
                 ChatLink = "open.kakao.어쩌구",
                 PeopleCount = 3,
                 PeopleMaxCount = 5,
+                ExpireHour = 12,
+                ExpireMin = 10,
                 FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["한식"]
             });
             ArticleCollection.Insert(0, new Article()
@@ -88,6 +92,8 @@ namespace DeliveryCommunity.ViewModel
                 ChatLink = "open.kakao.어쩌구",
                 PeopleCount = 1,
                 PeopleMaxCount = 3,
+                ExpireHour = 14,
+                ExpireMin = 00,
                 FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["중식"]
             });
             ArticleCollection.Insert(0, new Article()
@@ -100,6 +106,8 @@ namespace DeliveryCommunity.ViewModel
                 ChatLink = "open.kakao.어쩌구",
                 PeopleCount = 5,
                 PeopleMaxCount = 6,
+                ExpireHour = 15,
+                ExpireMin = 50,
                 FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["피자"]
             });
             ArticleCollection.Insert(0, new Article()
@@ -112,6 +120,8 @@ namespace DeliveryCommunity.ViewModel
                 ChatLink = "open.kakao.어쩌구",
                 PeopleCount = 1,
                 PeopleMaxCount = 2,
+                ExpireHour = 16,
+                ExpireMin = 30,
                 FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["양식"]
             });
             ArticleCollection.Insert(0, new Article()
@@ -124,6 +134,8 @@ namespace DeliveryCommunity.ViewModel
                 ChatLink = "open.kakao.어쩌구",
                 PeopleCount = 1,
                 PeopleMaxCount = 4,
+                ExpireHour = 17,
+                ExpireMin = 30,
                 FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["햄버거"]
             });
             ArticleCollection.Insert(0, new Article()
@@ -136,6 +148,8 @@ namespace DeliveryCommunity.ViewModel
                 ChatLink = "open.kakao.어쩌구",
                 PeopleCount = 1,
                 PeopleMaxCount = 3,
+                ExpireHour = 18,
+                ExpireMin = 20,
                 FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["치킨"]
             });
             ArticleCollection.Insert(0, new Article()
@@ -148,6 +162,8 @@ namespace DeliveryCommunity.ViewModel
                 ChatLink = "open.kakao.어쩌구",
                 PeopleCount = 3,
                 PeopleMaxCount = 4,
+                ExpireHour = 19,
+                ExpireMin = 15,
                 FoodCategoryBit = FoodCategoryDictonary.StringToFoodBit["분식"]
             });
         }
