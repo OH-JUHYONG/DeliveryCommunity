@@ -191,16 +191,42 @@
                                         x:Name="FoodCategoryLabel"
                                         Content="{Binding Path=Category}"
                                         Style="{StaticResource mainBoradPageUpLabel}" />
-                                    <TextBlock Text="/" Style="{StaticResource mainBoradPageSlice}"/>
+                                    <TextBlock Text="   #" Style="{StaticResource mainBoradPageSlice}"/>
                                     <Label
                                         x:Name="PlaceLabel"
                                         Content="{Binding Path=Place}"
                                         Style="{StaticResource mainBoradPageUpLabel}" />
-                                    <TextBlock Text="/" Style="{StaticResource mainBoradPageSlice}"/>
+                                    <TextBlock Text="  " Style="{StaticResource mainBoradPageSlice}"/>
+                                    <Label
+                                        Content=" ("
+                                        Style="{StaticResource mainBoradPageUpLabel}" />
                                     <Label
                                         x:Name="PeopleCountLabel"
                                         Content="{Binding Path=PeopleCount}"
                                         Style="{StaticResource mainBoradPageUpLabel}" />
+                                    <Label
+                                        x:Name="ddddd"
+                                        Content=" /"
+                                        Style="{StaticResource mainBoradPageUpLabel}" />
+                                    <Label
+                                        Content="{Binding Path=PeopleMaxCount}"
+                                        Style="{StaticResource mainBoradPageUpLabel}" />
+                                    <Label
+                                        Content="명 )    ("
+                                        Style="{StaticResource mainBoradPageUpLabel}" />
+                                    <Label
+                                        Content="{Binding Path=ExpireHour}"
+                                        Style="{StaticResource mainBoradPageUpLabel}" />
+                                    <Label
+                                        Content="시"
+                                        Style="{StaticResource mainBoradPageUpLabel}" />
+                                    <Label
+                                        Content="{Binding Path=ExpireMin}"
+                                        Style="{StaticResource mainBoradPageUpLabel}" />
+                                    <Label
+                                        Content="분 )"
+                                        Style="{StaticResource mainBoradPageUpLabel}" />
+                                    
                                 </WrapPanel>
                                 <TextBlock
                                     x:Name="TitleTextBlock"
